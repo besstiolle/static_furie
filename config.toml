@@ -1,11 +1,11 @@
 baseURL = "https://silly-brahmagupta-cf3c26.netlify.app/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "Furie.be"
 theme = "10ko"
-paginate     = 10
+paginate = 10
 
 [author]
-  name = "kevin"
+  name = "Kevin Danezis"
 
 [params]
   dateform        = "Jan 2, 2006"
@@ -14,7 +14,7 @@ paginate     = 10
   dateformNumTime = "2006-01-02 15:04"
 
   # Subtitle for home
-  homeSubtitle = "A simple and beautiful blog"
+  homeSubtitle = "Un mélange impressionnant de truc (presque) sans intérêt"
 
   # Set disableReadOtherPosts to true in order to hide the links to other posts.
   disableReadOtherPosts = false
@@ -23,7 +23,7 @@ paginate     = 10
   enableSharingButtons = false
 
   # Metadata mostly used in document's head
-  description = "My new homepage or blog"
+  description = "Un mélange impressionnant de truc (presque) sans intérêt"
   keywords = "homepage, blog"
   images = [""]
 
@@ -40,14 +40,14 @@ paginate     = 10
 
 [languages]
   [languages.en]
-    title = "Hello Friend NG"
-    subtitle = "A simple theme for Hugo"
+    title = "10ko Challenge"
+    subtitle = ""
     keywords = ""
     #copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
     readOtherPosts = "Read other posts"
 
     [languages.en.params.logo]
-      logoText = "hello friend ng"
+      logoText = "Insert cafe here"
       logoHomeLink = "/"
     # or
     #
@@ -58,4 +58,4 @@ paginate     = 10
   [[menu.main]]
     identifier = "blog"
     name       = "Blog"
-    url        = "/posts"
+    url        = "/posts"  # And you can even create generic menu
