@@ -1,0 +1,17 @@
+.icoTim, .icoTag,.icoWor,.icoDat {
+  display: inline-flex;
+  width: 12px;
+  height: 12px;
+  margin:0 6px;
+  background: url('imgs/sprite.png');
+}
+
+.icoTag{
+  background-position: 12px 0px;
+}
+.icoWor{
+  background-position: 0px 12px;
+}
+.icoDat{
+  background-position: 12px -12px;
+}
