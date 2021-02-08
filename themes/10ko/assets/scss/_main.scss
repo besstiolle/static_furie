@@ -87,7 +87,8 @@ a {
 img {
   display: block;
   max-width: 100%;
-
+  margin: 0px auto;
+/*
   &.left {
     margin-right: auto;
   }
@@ -104,9 +105,9 @@ img {
     border-radius: 50%;
     max-width: 25%;
     margin: auto;
-  }
+  }*/
 }
-
+/*
 figure {
   display: table;
   max-width: 100%;
@@ -165,13 +166,13 @@ figure {
     }
   }
 }
-
+*/
 em, i, strong {
   color: white;
 }
 
 code {
-  font-family: Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace;
+  font-family: /*Consolas, Monaco, Andale Mono,*/ Ubuntu Mono, monospace;
   font-display: auto;
   font-feature-settings: normal;
   background: $dark-background-secondary;
