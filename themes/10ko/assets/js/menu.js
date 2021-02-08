@@ -1,22 +1,23 @@
-// Mobile menu
-
-const menuTrigger = document.querySelector(".menu-trigger");
-const menu = document.querySelector(".menu");
-const mobileQuery = getComputedStyle(document.body).getPropertyValue(
+// Mobile m
+const h = "hidden"
+const d = document
+const mt = d.querySelector(".menu-trigger");
+const m = d.querySelector(".menu");
+const mq = getComputedStyle(d.body).getPropertyValue(
   "--phoneWidth"
 );
-const isMobile = () => window.matchMedia(mobileQuery).matches;
-const isMobileMenu = () => {
-  menuTrigger && menuTrigger.classList.toggle("hidden", !isMobile());
-  menu && menu.classList.toggle("hidden", isMobile());
+const im = () => window.matchMedia(mq).matches;
+const imm = () => {
+  mt && mt.classList.toggle(h, !im());
+  m && m.classList.toggle(h, im());
 };
 
-isMobileMenu();
+imm();
 
-menuTrigger &&
-  menuTrigger.addEventListener(
+mt &&
+  mt.addEventListener(
     "click",
-    () => menu && menu.classList.toggle("hidden")
+    () => m && m.classList.toggle(h)
   );
 
-window.addEventListener("resize", isMobileMenu);
+window.addEventListener("resize", imm);
