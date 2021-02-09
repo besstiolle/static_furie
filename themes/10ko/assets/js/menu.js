@@ -1,6 +1,6 @@
 // Mobile m
-const h = "hidden"
-const d = document
+const h = "hidden";
+const d = document;
 const mt = d.querySelector(".menu-trigger");
 const m = d.querySelector(".menu");
 const mq = getComputedStyle(d.body).getPropertyValue(
