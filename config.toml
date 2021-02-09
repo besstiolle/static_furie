@@ -14,7 +14,7 @@ paginate = 10
   dateformNumTime = "2006-01-02 15:04"
 
   # Subtitle for home
-  homeSubtitle = "Un mélange impressionnant de truc (presque) sans intérêt"
+  homeSubtitle = "Un mélange impressionnant de trucs (presque) sans intérêt"
 
   # Set disableReadOtherPosts to true in order to hide the links to other posts.
   disableReadOtherPosts = false
@@ -23,9 +23,22 @@ paginate = 10
   enableSharingButtons = false
 
   # Metadata mostly used in document's head
-  description = "Un mélange impressionnant de truc (presque) sans intérêt"
+  description = "Un mélange impressionnant de trucs (presque) sans intérêt"
   keywords = "homepage, blog"
   images = [""]
+
+  [[params.social]]
+    name = "twitter"
+    url  = "https://twitter.com/besstiolle/"
+
+  [[params.social]]
+    name = "github"
+    url  = "https://github.com/besstiolle/"
+
+  [[params.social]]
+    name = "linkedin"
+    url  = "https://www.linkedin.com/in/kevin-danezis/"
+
 
   [favicon]
       [color]
@@ -54,8 +67,20 @@ paginate = 10
     # path = "/img/your-example-logo.svg"
     # alt = "Your example logo alt text"
 
-  # And you can even create generic menu
+[menu] 
   [[menu.main]]
     identifier = "blog"
     name       = "Blog"
-    url        = "/posts"  # And you can even create generic menu
+    url        = "/posts"
+    weight     = 2
+  [[menu.main]]
+    identifier = "cv"
+    name       = "CV"
+    url        = "/cv"
+    weight     = 1
+  [[menu.main]]
+    identifier = "about"
+    name       = "A propos"
+    url        = "/about"
+    weight     = 0
+
