@@ -1,0 +1,10 @@
+#Security headers for all urls
+/*
+  # No type-mime sniffing : https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Content-Type-Options
+  X-Content-Type-Options: nosniff
+  # No iframe : https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options
+  X-Frame-Options: DENY
+  # No distant inclusion : https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP
+  Content-Security-Policy: default-src 'self' furie.be *.furie.be silly-brahmagupta-cf3c26.netlify.app
+  # block xss : https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-XSS-Protection
+  X-XSS-Protection: 1; mode=block
