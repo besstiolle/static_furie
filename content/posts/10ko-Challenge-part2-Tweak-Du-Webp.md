@@ -83,11 +83,18 @@ Pour notre challenge, seul le bloc `VP8` ➃ est obligatoire, restait donc à co
 
 Une fois le fichier mis à jour : miracle ! on gagne `200 octets` passant ainsi d'une petite image de `426 octets` à `226 octets`. 
 
+Sources
+ * https://developers.google.com/speed/webp/docs/riff_container
+
 ## Bilan des traitements des images
 
 Nous passons donc d'une situation avec de nombreuses images sous format SVG qui finissent dans une [unique image webp](/imgs/sprite.webp) qui ne me pèse que `226 octets`.
 
-A la vue de notre challenge, cela reste une très belle victoire. 
+A la vue de notre challenge, réduire de 47% le poids d'un fichier reste donc une très belle victoire. 
+
+Mais ce n'est pas tout. 
+
+Maintenant que nous avons atteint 
 
 
 {{< image src="/imgs/webp_logo.webp" alt="WebP Logo" position="center" style="border-radius: 8px;width: 650px;">}}
