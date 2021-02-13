@@ -11,9 +11,9 @@ tags:
 
 ## Origine du challenge
 
-A l'origine de ce challenge se trouvent une série de sites web prônant la conception numérique responsable et la sobriété fonctionnelles sur lesquels je finis par me perdre. 
+A l'origine de ce challenge se trouvent une série de sites web et d'articles prônant la conception numérique responsable et la sobriété fonctionnelle sur lesquels je finis par me perdre. 
 
-Et c'est le déclic car c'est un sujet qui me parle. J'en ai marre de ces sites internet qui souffrent d'obésité morbide au point de peser [plus lourd qu'un jeu vidéo](https://twitter.com/xbs/status/722461988283105280), de ces sites de presse bourrés de scripts et de trackers, et de l'[inutilité de chercher a aller plus vite](https://www.greenit.fr/2020/07/13/5g-quels-seront-les-impacts-environnementaux/) avec de nouveaux protocoles lorsqu'il suffirait de faire transiter moins d'information.
+Et c'est le déclic car c'est un sujet qui me parle. J'en ai marre de ces sites internet qui souffrent d'obésité morbide au point de peser [plus lourd qu'un jeu vidéo](https://twitter.com/xbs/status/722461988283105280), de ces sites de presse bourrés de scripts et de trackers, et de l'[inutilité de chercher la vitesse absolue](https://www.greenit.fr/2020/07/13/5g-quels-seront-les-impacts-environnementaux/) avec de nouveaux protocoles lorsqu'il suffirait de faire transiter moins d'information.
 
 Et quand je me regarde dans le miroir je me demande si je peux avoir moi aussi mon impact positif dans cette histoire. Mon site personnel d'alors tourne sous [CmsMadeSimple](https://www.cmsmadesimple.org/) et ne pèse que 350 kilo-octet, je ne suis certainement pas dans la tranche haute des gros sites web mais je peux certainement faire mieux.
 
