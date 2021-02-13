@@ -1,24 +1,31 @@
-## Pourquoi pas
++++
+title = "A propos de ce site"
+date = "2021-02-12"
+aliases = ["about-me","about-kevin","contact"]
+[ author ]
+  name = "Kevin"
++++
+
 
 Il m'est toujours compliqué de me présenter, que ce soit pour me vendre sur un poste ou pour exposer mes compétences sur le net.
 
 Il suffit de voir ma page linkedin pour se rendre compte que ce n'est pas ma spécialité...
 
-Alors essayons de fonctionner par thématique voulez vous ?
+Alors essayons de fonctionner par thématique voulez-vous ?
 
 ### Je suis un vieux gamer
 
 J'ai eu cette chance de grandir il y a fort longtemps avec un [Amstrad CPC 6128](https://fr.wikipedia.org/wiki/Amstrad_CPC_6128) sur lequel j'ai passé mes longues soirées d'hiver (et d'été) à me cramer les rétines devant des jeux dont les graphismes étaient ... basiques (?)
 
-En parlant de Basic, ce fut l'occasion pour moi de faire mes armes de programmation, un plaisir qui ne me quitta jamais.
+En parlant de Basic tiens, ce fut mon premier langage de programmation, l'occasion pour moi de faire mes armes et un plaisir qui ne me quittera jamais.
 
-Aujourd'hui encore je prendre beaucoup de plaisir sur les jeux vidéos, le plus souvent sur des jeux indies, loin des triples A.
+Aujourd'hui encore je prendre beaucoup de plaisir sur les jeux vidéo, le plus souvent sur des jeux indies, loin des triples A.
 
 ### Je suis un vieux développeur
 
-Basic d'abord. HTML, CSS et JS ensuite. Java pendant 15 ans... Php pendant 8 ans, Python, Re-JS, NodeJS, Kotlin ... Je ne compte plus le nombre de language testés ou masterisés à leur époque.
+Basic d'abord. HTML, CSS et JS ensuite. Java pendant 15 ans... Php pendant 8 ans, Python, Re-JS, NodeJS, Kotlin ... Je ne compte plus le nombre de langages testés ou masterisés à leur époque.
 
-C'est toujours avec un plaisir après toutes ces années que je retourne au chantier, la plongée dans la documentation, les premiers succès, les nuits d'insomnies, autant de plaisir un peu masochiste.
+C'est toujours avec plaisir, après toutes ces années, que je retourne au chantier, la plongée dans la documentation, les premiers succès, les nuits d'insomnies, autant de plaisir un peu masochiste.
 
 ### Je suis un formateur
 
@@ -28,7 +35,7 @@ Le plaisir d'apprendre passe chez moi par le plaisir de partager mes connaissanc
 
 Mais pas un fachiste de la méthode. 
 
-Vous ne me verrez pas jurer QUE par l'agilité. Mon passif de chef de projet forfait m'en empêche. Et puis à creuser un peu des sujets tels que les matrice de complexité on se rend compte vite de la place que peut occuper les méthodes agiles dans le monde des projets aujourd'hui... et les endroits ou elle n'a pas sa place.
+Vous ne me verrez pas jurer QUE par l'agilité. Mon passif de chef de projet forfait m'en empêche. Et puis à creuser un peu des sujets tels que les matrices de complexité on se rend compte vite de la place que peut occuper les méthodes agiles dans le monde des projets aujourd'hui... et les endroits où elle n'a pas sa place.
 
 Tout comme les formations, je tiens à remercier la communauté en participant à mon simple niveau en tant qu'organisateur de l'agile tour Rennes depuis quelques années maintenant.
 
@@ -36,4 +43,4 @@ Aider les équipes à grandir dans leur pratique de la gestion de projet est act
 
 ### Je touche à beaucoup de chose
 
-Généalogiste, plongeur, secouriste, podcasteur, jardinier, contributeur du monde open source, voyageur et papa accessoirement, autant d'aventures et autant de possibilités d'apprendre des autres. 
+Généalogiste, plongeur, secouriste, podcaster, jardinier, contributeur du monde open source, voyageur et papa accessoirement, autant d'aventures et autant de possibilités d'apprendre des autres. 

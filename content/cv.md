@@ -1,11 +1,16 @@
-# Kevin DANEZIS
++++
+title = "CV Kevin DANEZIS"
+date = "2021-02-12"
+[ author ]
+  name = "Kevin"
++++
 
 ## Scrum Master - Formateur - Agiliste
 
 ---
 ## Formateur Agiliste pour &#9619;&#9619;&#9619;&#9619;&#9619;&#9619;&#9619;
 
-<i class='icoTag'></i>Rennes, domaine banquaire
+<i class='icoTag'></i>Rennes, domaine bancaire
 <i class='icoDat'></i>Depuis Mai 2020
 
 * **Parcours de formation multi domaine**
@@ -26,7 +31,7 @@
 <i class='icoDat'></i>Mai 2020 - Septembre 2020
 
 * **Projet de refonte applicative**
->Accompagnement d’une équipe de 4 personnes (2 devs & 2 experts) réalisant une refonte applicative d'un existant soumis à des contraintes forte **et** de disponibilités **et** de montée en charge. Les choix technologiques (Kafka / ELK / ...) sont restés à la discretion de l'équipe tandis que l'accompagnement du client, la collecte du besoin (existant ou non) et l'organisation générale étaient de ma responsabilité.
+>Accompagnement d’une équipe de 4 personnes (2 devs & 2 experts) réalisant une refonte applicative d'un existant soumis à des contraintes forte **et** de disponibilités **et** de montée en charge. Les choix technologiques (Kafka / ELK / ...) sont restés à la discrétion  de l'équipe tandis que l'accompagnement du client, la collecte du besoin (existant ou non) et l'organisation générale étaient de ma responsabilité.
 
 * **Mission et tâches principales :**
   * Coordination des actions inter équipes
@@ -61,7 +66,7 @@
 <i class='icoDat'></i>Septembre 2018 - Janvier 2019
 
 * **Accompagnement Scrum**
->Intervention auprès d’une équipe Agile en difficulté, Analyse de la situation, préconisation et mise en place d’un accompagnement personnalisé pour chaques membres de l’équipe
+>Intervention auprès d’une équipe Agile en difficulté, Analyse de la situation, préconisation et mise en place d’un accompagnement personnalisé pour chaque membre de l’équipe
 
 * **Mission et tâches principales :**
   * Position d'observateur, de Coach puis de Formateur
@@ -86,7 +91,7 @@
   * Mise en place de rituels et artéfacts agile au sein du forfait.
   * Suivit des consommations de charge
 
-* **Forfait, Scrum, Reporting, Redaction US, Proxy PO**
+* **Forfait, Scrum, Reporting, Rédaction US, Proxy PO**
 
 ## Loisirs
   * 2018-.... : Généalogie et outils associés
