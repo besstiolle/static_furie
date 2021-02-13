@@ -85,6 +85,7 @@ Une fois le fichier mis à jour : miracle ! on gagne `200 octets` passant ainsi 
 
 Sources
  * https://developers.google.com/speed/webp/docs/riff_container
+ * https://www.toutjavascript.com/tools/convert-online-binary-hexa-decimal.php
 
 ## Bilan des traitements des images
 
@@ -94,6 +95,7 @@ A la vue de notre challenge, réduire de 87% le poids d'une image sans perte not
 
 Mais ce n'est pas tout. Maintenant que nous avons atteint un poids plume (`226 octets`), et après contrôle en production du coût du header de sa requête http, `117 octets` sous chrome, je décide de tester le passage de l'image en base64. Résultat : `304 octets` soit un nouveau gain total de : 39 octets
 
-Dans ce challenge il n'y a décidement pas de petite économie...
+Une petite économie qui se fait malheureusement au dépend d'un rendu graphique ralenti de 100ms (+10%) car le rendu de la base64 est bloquant contrairement au chargement en parallèle des images habituellement, je décide exceptionnellement que le jeu n'en vaut pas la chandelle 
+
 
 {{< image src="/imgs/webp_logo.webp" alt="WebP Logo" position="center" style="border-radius: 8px;width: 650px;">}}
