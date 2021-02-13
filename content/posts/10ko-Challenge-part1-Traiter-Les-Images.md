@@ -64,7 +64,7 @@ Cette mécanique demande peu d'effort, un peu de CSS et une connaissance de ce f
 
 ### Démarrage & Traitement des SVG
 
-J'ai donc démarré mon site en démarrant d'un [template Hugo existant](https://themes.gohugo.io/hugo-theme-hello-friend-ng/#how-to-start) que j'ai estimé être relativement épuré. J'ai ensuite entrepris de purger tout ce qui ne m'intéressait pas, notamment en retirant les SVG (bonne pratique pour l'accès via mobile) pour les remplacer par des images concaténées en [un seul sprite CSS](http://localhost:1313/imgs/sprite.webp) La raison est simple : après test, le poids total des SVGs était supérieur à un ensemble de règles CSS + sprite CSS.
+J'ai donc démarré mon site en démarrant d'un [template Hugo existant](https://themes.gohugo.io/hugo-theme-hello-friend-ng/#how-to-start) que j'ai estimé être relativement épuré. J'ai ensuite entrepris de purger tout ce qui ne m'intéressait pas, notamment en retirant les SVG (bonne pratique pour l'accès via mobile) pour les remplacer par des images concaténées en [un seul sprite CSS](/imgs/sprite.webp) La raison est simple : après test, le poids total des SVGs était supérieur à un ensemble de règles CSS + sprite CSS.
 
 Autre axe facile à réaliser : toutes les images de décoration de texte sont redimensionnées "au plus juste" du besoin. Inutile d'embarquer des tailles excessives.
 
