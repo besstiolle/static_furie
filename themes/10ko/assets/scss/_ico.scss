@@ -1,4 +1,4 @@
-.icoTim, .icoTag,.icoWor,.icoDat {
+.icoTim, .icoTag,.icoWor,.icoDat, .icoRss, .icoMen {
   display: inline-flex;
   width: 12px;
   height: 12px;
@@ -8,11 +8,21 @@
 }
 
 .icoTag{
-  background-position: 12px 0px;
+  background-position: -12px 0px;
 }
 .icoWor{
-  background-position: 0px 12px;
+  background-position: 0px -12px;
 }
 .icoDat{
-  background-position: 12px -12px;
+  background-position: -12px -12px;
+}
+.icoRss{
+  background-position: -30px -23px;
+  width: 18px;
+  height: 18px;
+}
+.icoMen{
+  background-position: 24px -0px;
+  width: 24px;
+  height: 24px;
 }
