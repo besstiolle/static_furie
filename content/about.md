@@ -1,5 +1,5 @@
 +++
-title = "A propos de ce site"
+title = "À propos de ce site"
 date = "2021-02-12"
 aliases = ["about-me","about-kevin","contact"]
 [ author ]
@@ -19,17 +19,17 @@ J'ai eu cette chance de grandir il y a fort longtemps avec un [Amstrad CPC 6128]
 
 En parlant de Basic tiens, ce fut mon premier langage de programmation, l'occasion pour moi de faire mes armes et un plaisir qui ne me quittera jamais.
 
-Aujourd'hui encore je prendre beaucoup de plaisir sur les jeux vidéo, le plus souvent sur des jeux indies, loin des triples A.
+Aujourd'hui encore je prends beaucoup de plaisir sur les jeux vidéo, le plus souvent sur des jeux indies, loin des triples A.
 
 ### Je suis un vieux développeur
 
-Basic d'abord. HTML, CSS et JS ensuite. Java pendant 15 ans... Php pendant 8 ans, Python, Re-JS, NodeJS, Kotlin ... Je ne compte plus le nombre de langages testés ou masterisés à leur époque.
+Basic d'abord. HTML, CSS et JS ensuite. Java pendant 15 ans... Php pendant 8 ans, Python, Re-JS, NodeJS, Kotlin, etc. Je ne compte plus le nombre de langages testés ou masterisés à leur époque.
 
 C'est toujours avec plaisir, après toutes ces années, que je retourne au chantier, la plongée dans la documentation, les premiers succès, les nuits d'insomnies, autant de plaisir un peu masochiste.
 
 ### Je suis un formateur
 
-Le plaisir d'apprendre passe chez moi par le plaisir de partager mes connaissances pour peu que l'on me le demande. Que ce soit sur des sujets techniques ([git](https://github.com/besstiolle/)), de sujets de management et de gestion de projet (agilité, scrum, sm, kanban, po, ....) ou sur des sujets qui n'ont rien à voir avec mon métier (formateur croix rouge), je tente de partager ma passion et de remercier la communauté pour tout ce qu'elle a pu m'apporter toutes ses années d'apprentissage.
+Le plaisir d'apprendre passe chez moi par le plaisir de partager mes connaissances pour peu que l'on me le demande. Que ce soit sur des sujets techniques ([git](https://github.com/besstiolle/)), de sujets de management et de gestion de projet (agilité, scrum, sm, kanban, po, etc.) ou sur des sujets qui n'ont rien à voir avec mon métier (formateur croix rouge), je tente de partager ma passion et de remercier la communauté pour tout ce qu'elle a pu m'apporter toutes ses années d'apprentissage.
 
 ### Je suis un agiliste convaincu
 
@@ -39,8 +39,8 @@ Vous ne me verrez pas jurer QUE par l'agilité. Mon passif de chef de projet for
 
 Tout comme les formations, je tiens à remercier la communauté en participant à mon simple niveau en tant qu'organisateur de l'agile tour Rennes depuis quelques années maintenant.
 
-Aider les équipes à grandir dans leur pratique de la gestion de projet est actuellement ma principale occupation, un nouveau challenge pour 2021
+Aider les équipes à grandir dans leur pratique de la gestion de projet est actuellement ma principale occupation, un nouveau challenge pour 2021.
 
-### Je touche à beaucoup de chose
+### Je touche à beaucoup de choses
 
 Généalogiste, plongeur, secouriste, podcaster, jardinier, contributeur du monde open source, voyageur et papa accessoirement, autant d'aventures et autant de possibilités d'apprendre des autres. 
