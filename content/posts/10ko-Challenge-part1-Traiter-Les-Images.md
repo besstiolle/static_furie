@@ -1,5 +1,6 @@
 ---
 title: "10Ko Challenge #1 : Traiter les images"
+description: "Présentation d'un ensemble de bonnes pratiques pour optimiser les images de son site"
 date: 2021-02-10T00:00:00+01:00
 draft: false
 toc: true

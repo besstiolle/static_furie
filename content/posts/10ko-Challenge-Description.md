@@ -1,5 +1,6 @@
 ---
 title: "10Ko Challenge #0 : Présentation"
+description: "Présentation du concept du challenge 10ko"
 date: 2021-02-09T00:00:00+01:00
 draft: false
 toc: true

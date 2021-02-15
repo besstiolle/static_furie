@@ -1,5 +1,6 @@
 ---
 title: "10Ko Challenge #3 : Choix Architecturaux"
+description: "TODO"
 date: 2021-02-14T00:00:00+01:00
 draft: true
 toc: true
