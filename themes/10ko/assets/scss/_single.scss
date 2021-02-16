@@ -64,19 +64,19 @@
     @include dimmed;
 
     p {
-      margin: 0.8em 0;
+      margin: .8em 0;
     }
 
     a:hover {
-      border-bottom: 1px solid white;
+      border-bottom: 1px solid #fff;
     }
 
     svg {
-      margin-right: 0.8em;
+      margin-right: .8em;
     }
 
     .tag {
-      margin-right: 0.5em;
+      margin-right: .5em;
 
       &::before {
         content: "#";

@@ -28,7 +28,7 @@
     animation: cursor 1s infinite;
   }
 
-  @media (prefers-reduced-motion: reduce) {
+  @media (prefers-reduced-motion:reduce) {
     &__cursor {
         animation: none;
     }
