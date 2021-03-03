@@ -40,8 +40,8 @@ Pour exemple, au moment de la rédaction de ce texte, Chrome m'annonce que mon f
 **Moins de requête = autant d'économie**
 
 sources : 
- * https://www.globaldots.com/blog/googles-web-performance-best-practices-3-minimize-request-overhead
- * https://www.w3.org/Protocols/HTTP/Performance/
+ * [Bonne pratique : réduire les headers](https://www.globaldots.com/blog/googles-web-performance-best-practices-3-minimize-request-overhead)
+ * [Les perfs de http(s) par le W3C](https://www.w3.org/Protocols/HTTP/Performance/)
 
 ### Rappel de l'encodage en base 64
 
@@ -52,8 +52,8 @@ D'autres cas d'usage peuvent se présenter notamment dans le cas de [streaming d
 Autant dire que ce n'est pas demain la veille qu'un encodage en base64 va nous aider.
 
 sources : 
- * https://medium.com/snapp-mobile/dont-use-base64-encoded-images-on-mobile-13ddeac89d7c
- * https://bunny.net/blog/why-optimizing-your-images-with-base64-is-almost-always-a-bad-idea/
+ * [N'utilisez pas la base64!](https://medium.com/snapp-mobile/dont-use-base64-encoded-images-on-mobile-13ddeac89d7c)
+ * [idem](https://bunny.net/blog/why-optimizing-your-images-with-base64-is-almost-always-a-bad-idea/)
 
 ### Rappel sur Les sprites CSS
 

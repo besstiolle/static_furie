@@ -39,7 +39,7 @@ Alors nous ne sommes pas étonnés de voir autant de charabia mais ma curiosité
 Se pose alors la question de savoir si je ne pourrais pas gagner encore quelques octets en supprimant / réduisant le contenu des données EXIF ? A ce moment je n'ai aucune connaissance de comment est composé un fichier binaire Webp ni comment se structure les données EXIF
 
 Sources : 
- * https://www.nikonpassion.com/qu-est-ce-que-donnees-exif-comment-lire-utiliser/
+ * [Qu'est ce qu'est l'exif ?](https://www.nikonpassion.com/qu-est-ce-que-donnees-exif-comment-lire-utiliser/)
 
 ### Tentative de compréhension du format WebP
 
@@ -54,7 +54,7 @@ Et au détour d'une lecture je me rends compte que le format Webp que l'on conna
 Du coup question : serait-il possible de transformer notre webp-L en webp-old school ?
 
 Sources : 
- * https://www.exiv2.org/download.html pour visualiser les chunks d'un fichier webp ou autre.
+ * [Pour visualiser les chunks d'un fichier webp ou autre](https://www.exiv2.org/download.html]
 
 ### Décryptage du webp
 
@@ -86,8 +86,8 @@ Pour notre challenge, seul le bloc `VP8` ➃ est obligatoire, restait donc à co
 Une fois le fichier mis à jour : miracle ! on gagne `200 octets` passant ainsi d'une petite image de `426 octets` à `226 octets`. 
 
 Sources
- * https://developers.google.com/speed/webp/docs/riff_container
- * https://www.toutjavascript.com/tools/convert-online-binary-hexa-decimal.php
+ * [doc webp officielle](https://developers.google.com/speed/webp/docs/riff_container)
+ * [lecteur hexa en ligne](https://www.toutjavascript.com/tools/convert-online-binary-hexa-decimal.php)
 
 ## Bilan des traitements des images
 

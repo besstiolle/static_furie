@@ -21,8 +21,8 @@ Et quand je me regarde dans le miroir je me demande si je peux avoir moi aussi m
 Alors pourquoi ne pas réduire à peau de chagrin la quantité de données délivrée par mon site internet ? et quitte à se lancer, pourquoi ne pas frapper fort avec la mise en place d'une borne symbolique de 10 kilo-octets ?
 
 Liens : 
-- https://collectif.greenit.fr/ecoconception-web/115-bonnes-pratiques-eco-conception_web.html
-- https://www.youtube.com/watch?v=uyNu7azGr_w
+- [115 bonnes pratiques](https://collectif.greenit.fr/ecoconception-web/115-bonnes-pratiques-eco-conception_web.html)
+- [un super talk](https://www.youtube.com/watch?v=uyNu7azGr_w)
 
 ## Règles du challenge
 

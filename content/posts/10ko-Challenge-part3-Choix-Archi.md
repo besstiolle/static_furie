@@ -41,7 +41,7 @@ Les générateurs de site ont pour ancêtre les FrontPage et autre Dreamweaver m
 
 On y retrouve [Next.js](https://nextjs.org/), [Gatsby](https://www.gatsbyjs.com/), [Nuxt](https://fr.nuxtjs.org/), [Hexo](https://hexo.io/) et bien d'autres pour la partie JS, [Hugo](https://gohugo.io/) en langage Go et [Jekyll](https://jekyllrb.com/) le favori de Github en Ruby
 
-Le souci des générateurs JS est leur propre ADN : ces derniers sont toujours amenés à utiliser du JS à tout-va, pour des requêtes xhr, pour de l'animation, pour du [SPA](https://fr.wikipedia.org/wiki/Application_web_monopage), etc... Donc ils sont écartés de facto.
+Le souci des générateurs JS est leur propre ADN : ces derniers sont toujours amenés à utiliser du JS à tout-va, pour des requêtes xhr, pour de l'animation, pour du [SPA](https://fr.wikipedia.org/wiki/Application_web_monopage), etc. Donc ils sont écartés de facto.
 
 Je fais le choix arbitraire de choisir Hugo après l'avoir testé en local.
 
@@ -67,8 +67,6 @@ Ce sera donc **Hugo**.
 Hugo propose une chouette liste de thèmes dans lesquels je trouve [hello-friend-ng](https://themes.gohugo.io/hugo-theme-hello-friend-ng/), un template épuré qui pèse entre 250 et 300ko hors police de caractère. C'est beaucoup par rapport à notre cible, mais je pense pouvoir faire la différence.
 
 Me voilà donc en train d'installer Hugo sur mon PC avec le thème sélectionné et je commence à trifouiller la bête avant de push sur github une première version sans prétention de mon site sur [netlify](https://www.netlify.com/), car une fois n'est pas coutume, les générateurs de site -dont Hugo- ont le bon goût d'être supporté par cet hébergeur gratuit que je recommande. 
-
-Sources
 
 [^1]: Raison de sécurité / optimisation / légerté ultime / écoconception / Envie de découvrir ...
 
