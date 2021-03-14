@@ -17,7 +17,7 @@ tags:
 
 > Le but de cette série d'articles est de démonter concrètement que réaliser un site internet restant sous la barre des 10Ko tout compris est une entreprise compliquée mais réalisable si nous savons opérer les bons sacrifices.
 
-La moyenne des poids d'un site internet était de 2.4Mo en 2016, il plafonait à 800ko en 2011 et aujourd'hui nous avons une moyenne de 5Mo pour le top 10 des sites internets en France... ça ne risque pas de s'améliorer et l'utopie d'un réseau plus rapide (5G) capable d'engloutir ce poids est une utopie. Il est temps de faire machine arrière.
+La moyenne des poids d'un site internet plafonnait à **800ko en 2011**, était de **2.4Mo en 2016**, et aujourd'hui nous avons une moyenne de **5Mo pour le top 10** des sites internets en France... ça ne risque pas de s'améliorer et l'utopie d'un réseau plus rapide (5G) capable d'engloutir ce poids est une utopie. Il est temps de faire machine arrière.
 
 Alors prenons un peu de hauteur sur ce Challenge 10ko et tentons de faire le point sur les stratégies possibles avant de tenter une extrapolation vers des projets de plus grandes envergures.
 
