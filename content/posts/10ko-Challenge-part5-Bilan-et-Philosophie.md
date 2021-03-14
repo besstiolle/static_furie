@@ -21,6 +21,10 @@ La moyenne des poids d'un site internet plafonnait à **800ko en 2011**, était 
 
 Alors prenons un peu de hauteur sur ce Challenge 10ko et tentons de faire le point sur les stratégies possibles avant de tenter une extrapolation vers des projets de plus grandes envergures.
 
+## Quels sont les résultats ?
+
+Au moment de la rédaction de cet article j'arrive sur la plupart de mes pages à rester sous la barre des 10ko sauf dans certaines situations lorsque l'image d'illustration de fin d'article et/ou lorsque l'article est très long. J'ai donc encore du travail à faire mais j'estime que le plus dur est maintenant réalisé, mon site explose les records de simplicité et c'était mon but premier.
+
 ## Comment participer à son propre niveau ?
 
 De très nombreux chemins existent pour lutter contre l'obésité du web. 
