@@ -1,7 +1,6 @@
 ---
 title: "10Ko Challenge #2 : Tweak d'un fichier Webp"
 description: "Présentation d'une méthode pour améliorer manuellement les perfs de Webp"
-linktitle: Migrating from Jekyll
 date: 2021-02-11T00:00:00+01:00
 draft: false
 toc: true
@@ -39,15 +38,15 @@ Alors nous ne sommes pas étonnés de voir autant de charabia mais ma curiosité
 Se pose alors la question de savoir si je ne pourrais pas gagner encore quelques octets en supprimant / réduisant le contenu des données EXIF ? A ce moment je n'ai aucune connaissance de comment est composé un fichier binaire Webp ni comment se structure les données EXIF
 
 Sources : 
- * [Qu'est ce qu'est l'exif ?](https://www.nikonpassion.com/qu-est-ce-que-donnees-exif-comment-lire-utiliser/)
+ * [Qu'est-ce qu'est l'exif ?](https://www.nikonpassion.com/qu-est-ce-que-donnees-exif-comment-lire-utiliser/)
 
 ### Tentative de compréhension du format WebP
 
 La partie la plus compliquée n'a certainement pas été de lire proprement le fichier webp, n'importe quel lecteur hexa est capable de le faire et [il en existe même en ligne](https://hex-works.com/eng). Donc lire était facile, mais comprendre ce qu'on lisait était autre chose.
 
-J'ai dû passer un peu de temps à lire la documentation de [Google sur Webp](https://developers.google.com/speed/webp/docs/riff_container), à jouer avec des outils comme [Exiv2](https://dev.exiv2.org/projects/exiv2/wiki/The_Metadata_in_WEBP_files) qui sont spécialisés sur l'extraction des métadatas et le contrôle de cohérence des chunks de fichier ce qui me permettait rapidement de savoir si les modifications internes réalisées sur le fichier impactait son fonctionnement ou pas.
+J'ai dû passer un peu de temps à lire la documentation de [Google sur Webp](https://developers.google.com/speed/webp/docs/riff_container), à jouer avec des outils comme [Exiv2](https://dev.exiv2.org/projects/exiv2/wiki/The_Metadata_in_WEBP_files) qui sont spécialisés sur l'extraction des metadatas et le contrôle de cohérence des chunks de fichier ce qui me permettait rapidement de savoir si les modifications internes réalisées sur le fichier impactait son fonctionnement ou pas.
 
-Malheureusement pour moi je me rends vite compte qu'on peut certes effacer du contenu EXIF mais pas en supprimer son espace réservé de 182 octets. Un comble quand l'on sait que cet espace est de facto réservé, même pour une image d'1px sur 1px. Plus le fichier était petit et plus rageant devient le ratio in.utile de la place prise par les metadatas dans la situation de notre challenge 10ko !
+Malheureusement pour moi je me rends vite compte qu'on peut certes effacer du contenu EXIF mais pas en supprimer son espace réservé de 182 octets. Un comble quand l'on sait que cet espace est de facto réservé, même pour une image d'1px sur 1px. Plus le fichier était petit et plus rageant devient le ratio inutile de la place prise par les metadatas dans la situation de notre challenge 10ko !
 
 Et au détour d'une lecture je me rends compte que le format Webp que l'on connait aujourd'hui n'est pas le même que les premières éditions sorties en 2011 telles que décrites dans les [RFCs de l'époque](https://www.rfc-editor.org/info/rfc6386) et que si le webpL (version actuelle) prend en charge plein de truc comme la transparence, la compression sans perte, le profil de la couleur, les animations et les metadatas... ce n'était pas le cas de la première version de la RFC !
 
@@ -77,7 +76,7 @@ Un Webp moderne sans transparence ni animation se découpe ainsi
  * ➂ : le bloc lié aux descriptions étendues de webp il fait toujours 18 octets de long.
  * ➃ : le contenu de l'image à proprement parlé, sa taille est variable.
  * ➄ : les metadatas, ici au format EXIF, il fait toujours 182 octets de long, même vide
- * Les inscriptions `VP8X`, `VP8` et `EXIF` prennent respectivement 4,3 et 4 octets de long est sont littéralement  une chaine de caractères "VP8X", "VP8" et "EXIF". Seul le bloc `VP8` est obligatoire, le bloc `VP8X` est obligatoire si le bloc `EXIF` est présent
+ * Les inscriptions `VP8X`, `VP8` et `EXIF` prennent respectivement 4,3 et 4 octets de long est sont littéralement une chaine de caractères "VP8X", "VP8" et "EXIF". Seul le bloc `VP8` est obligatoire, le bloc `VP8X` est obligatoire si le bloc `EXIF` est présent
 
 De ma compréhension, d'autres blocs peuvent être ajoutés (gestion transparence, animation, ...) et le bloc `VP8X` ➂ est là pour définir la présence de l'un ou l'autre des blocs. 
  
@@ -99,5 +98,5 @@ Mais ce n'est pas tout. Maintenant que nous avons atteint un poids plume (`226 o
 
 Une petite économie qui se fait malheureusement au dépend d'un rendu graphique ralenti de 100ms (+10%) car le rendu de la base64 est bloquant contrairement au chargement en parallèle des images habituellement, je décide exceptionnellement que le jeu n'en vaut pas la chandelle 
 
-
 {{< image src="/imgs/webp_logo.webp" alt="WebP Logo" position="center" style="border-radius: 8px;width: 650px;">}}
+

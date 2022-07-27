@@ -26,7 +26,7 @@ Liens :
 
 ## Règles du challenge
 
- 1. Le poids de la page d'accueil ne doit pas dépasser les 10ko, en incluant tous les élements de la page : js, css, image,... que la ressource soit chargée en synchrone et en asynchrone.
+ 1. Le poids de la page d'accueil ne doit pas dépasser les 10ko, en incluant tous les éléments de la page : js, css, image... que la ressource soit chargée en synchrone et en asynchrone.
  2. Même consigne pour une page type "détail d'un article".
  3. Toutes les mesures doivent être réalisée sur chrome / chromium et dans une situation desktop ou mobile
  4. Toutes les mesures se font sans cache, sans Service Worker installés ou autres filouteries.
@@ -40,3 +40,4 @@ Liens :
  Je vous invite à m'envoyer vos créations, je me ferrai un plaisir de l'ajouter ci-dessous.
 
 {{< image src="/imgs/anvil.webp" alt="Enclume" position="center" style="border-radius: 8px;width: 650px;">}}
+

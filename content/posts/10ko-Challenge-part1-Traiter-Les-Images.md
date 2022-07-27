@@ -45,7 +45,7 @@ sources :
 
 ### Rappel de l'encodage en base 64
 
-Une solution à notre problème cité précédemment  serait d'inclure au sein du code source l'image sous la forme d'[un binaire en base64](https://www.base64-image.de/), me faisant économiser un header http. Sauf que ce n'est pas aussi simple. L'encodage en base64 me coûterait en moyenne 30% plus cher que le poids d'une image. L'option est donc valable uniquement si `(1.3 * poidsImage) < poidsImage + 80` soit : `poidsImage < 80/0.7` soit `poidsImage < 114`octets.
+Une solution à notre problème cité précédemment serait d'inclure au sein du code source l'image sous la forme d'[un binaire en base64](https://www.base64-image.de/), me faisant économiser un header http. Sauf que ce n'est pas aussi simple. L'encodage en base64 me coûterait en moyenne 30% plus cher que le poids d'une image. L'option est donc valable uniquement si `(1.3 * poidsImage) < poidsImage + 80` soit : `poidsImage < 80/0.7` soit `poidsImage < 114`octets.
 
 D'autres cas d'usage peuvent se présenter notamment dans le cas de [streaming de data](https://medium.com/snapp-mobile/dont-use-base64-encoded-images-on-mobile-13ddeac89d7c)
 
@@ -94,3 +94,5 @@ Sources des comparatifs :
 Nous en sommes maintenant à un site passant sous la barre des 15ko ! 
 
 {{< image src="/imgs/leaves.webp" alt="feuilles d'arbres" position="center" style="border-radius: 8px;width: 650px;">}}
+
+

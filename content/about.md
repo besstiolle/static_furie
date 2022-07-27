@@ -7,10 +7,9 @@ aliases = ["about-me","about-kevin","contact"]
   name = "Kevin"
 +++
 
-
 Il m'est toujours compliqué de me présenter, que ce soit pour me vendre sur un poste ou pour exposer mes compétences sur le net.
 
-Il suffit de voir ma page linkedin pour se rendre compte que ce n'est pas ma spécialité...
+Il suffit de voir ma page Linkedin pour se rendre compte que ce n'est pas ma spécialité...
 
 Alors essayons de fonctionner par thématique voulez-vous ?
 
@@ -45,3 +44,5 @@ Aider les équipes à grandir dans leur pratique de la gestion de projet est act
 ### Je touche à beaucoup de choses
 
 Généalogiste, plongeur, secouriste, podcaster, jardinier, contributeur du monde open source, voyageur et papa accessoirement, autant d'aventures et autant de possibilités d'apprendre des autres. 
+
+

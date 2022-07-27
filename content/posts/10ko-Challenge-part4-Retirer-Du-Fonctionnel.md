@@ -25,7 +25,7 @@ La première manipulation à réaliser pour gagner des octets est de s'assurer q
 
 Faisons simple, le contenu de mon site ne nécessite pas d'animation, il ne nécessite pas d'opération magique et je n'ai pas de pseudo-validation sur mes formulaires. Donc j'ai purement et simplement supprimé le javascript de mon site. [ici](https://github.com/besstiolle/static_furie/commit/d2ed1619ceed981a8e8adb2b8694be1e51ca93bb)
 
-Le point d'attention était un bout de code JS qui permettait l'affichage du menu en mode "hamburger" lors de l'affichage sur mobile de mon site. J'ai tenté initialement d'[optimiser manuellement](https://github.com/besstiolle/static_furie/commit/33eea37efe7eb90abb2852da63dd26af26339837) le code comme un gros sauvage mais malgré tous mes efforts, le fichier JS restant me coûtera `480 octets`, et cela même si je suis sur desktop. Je choisis donc de le supprimer également et de trouver une autre solution plus tard pour les visiteurs mobile.
+Le point d'attention était un bout de code JS qui permettait l'affichage du menu en mode "hamburger" lors de l'affichage sur mobile de mon site. J'ai tenté initialement d'[optimiser manuellement](https://github.com/besstiolle/static_furie/commit/33eea37efe7eb90abb2852da63dd26af26339837) le code comme un gros sauvage mais malgré tous mes efforts, le fichier JS restant me coûtera `480 octets`, et cela même si je suis sur desktop. Je choisis donc de le supprimer également et de trouver une autre solution plus tard pour les visiteurs mobiles.
 
 Retirer le JS me permet au passage de gagner une nouvelle requête HTTP.
 
@@ -33,7 +33,7 @@ Retirer le JS me permet au passage de gagner une nouvelle requête HTTP.
 
 Un grand drame de nos sites internet aujourd'hui est de chercher à avoir la police d'écriture qui propose aux visiteurs de montrer à quel points vos talents de qualigraphie sont développés, même si cela va à l'encontre de la lisibilité de vos textes.
 
-Certes, il y a 10 ans, le parc informatique n'emparquait que peu de polices d'écritures. Ce n'est plus le cas maintenant. J'opte pour [la suppression des polices d'écritures](https://github.com/besstiolle/static_furie/commit/d5d63877a4b7efb23916e40cc1f6d86adc3fc3fb) fournies avec le templates et j'opte pour une sélection de police natives avec différents fallback pour assurer d'une compatibilité maximum entre les devices.
+Certes, il y a 10 ans, le parc informatique n'embarquait que peu de polices d'écritures. Ce n'est plus le cas maintenant. J'opte pour [la suppression des polices d'écritures](https://github.com/besstiolle/static_furie/commit/d5d63877a4b7efb23916e40cc1f6d86adc3fc3fb) fournies avec le templates et j'opte pour une sélection de police natives avec différents fallback pour assurer d'une compatibilité maximum entre les devices.
 
 Je passe ainsi à `Ubuntu Mono, monospace` et je gagne plusieurs centaines de kilo octets ! 
 
@@ -85,7 +85,7 @@ Alors là, merci Hugo, l'outil permet nativement de minifier le code html, JS et
 
 ## Server Side
 
-Peu d'opérations effectuées, mon hébergeur netlify permet déjà d'avoir de nombreuses options activées comme la mise en cache, la compression gz... Je note au détour d'un test que certains headers lié à la sécurité sont manquant. Il me suffit simplement d'ajouter [un fichier `_headers` au bon endroit](https://github.com/besstiolle/static_furie/commit/08ca151f8c70d2468d9ba9dd51991f22b40af6cf) de mon site pour enrichir les headers de netlify
+Peu d'opérations effectuées, mon hébergeur netlify permet déjà d'avoir de nombreuses options activées comme la mise en cache, la compression gz... Je note au détour d'un test que certains headers liés à la sécurité sont manquants. Il me suffit simplement d'ajouter [un fichier `_headers` au bon endroit](https://github.com/besstiolle/static_furie/commit/08ca151f8c70d2468d9ba9dd51991f22b40af6cf) de mon site pour enrichir les headers de netlify
 
 Sources : 
  * [la compression gz](https://gtmetrix.com/enable-gzip-compression.html)
@@ -96,6 +96,7 @@ Sources :
 
 À ce stade de mes articles j'ai un site internet qui pèse entre 6.2 et 11.1 ko selon la page. C'est une situation inespérée et clairement bienvenue. Mais réaliser toutes ces opérations à un coût énorme : mon site a perdu en fonctionnalité. Ce coût, je le connaissais et je l'accepte bien évidemment, car j'en mesure sa portée. 
 
-Dans le dernier article qui ferra office de bilan je reviendrai sur cet aspect et tenterai de répondre à la question : "Suis-je capable de sacrifier l'indispensable ?" 
+Dans le dernier article qui fera office de bilan je reviendrai sur cet aspect et tenterai de répondre à la question : "Suis-je capable de sacrifier l'indispensable ?" 
 
 {{< image src="/imgs/book.webp" alt="Livres" position="center" style="border-radius: 8px;width: 650px;">}}
+

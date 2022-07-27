@@ -29,7 +29,7 @@ Je me suis beaucoup baladé sur des sites tels que https://jamstack.org/ qui pro
 
 ### Headless CMS
 
-Ces CMS "sans tête" sont des produits qui proposent au travers d'APIs, de micro services ou de toutes autres solutions (git notamment), de renvoyer au client le contenu désiré et uniquement le contenu. Le client se charge de son côté d'appeler la bonne API pour afficher le contenu désiré par l'utilisateur sans une interface pré-définit
+Ces CMS "sans tête" sont des produits qui proposent au travers d'APIs, de micro services ou de toutes autres solutions (git notamment), de renvoyer au client le contenu désiré et uniquement le contenu. Le client se charge de son côté d'appeler la bonne API pour afficher le contenu désiré par l'utilisateur sans une interface prédéfinit
 
 Le trio de tête étant [Ghost](https://ghost.org), [Strapi](https://strapi.io/) et [Netlify CMS](https://www.netlifycms.org/), Cumulant à eux seuls plus de la moitié des "stars" ☆ github de tous les projets Headless identifiés
 
@@ -55,7 +55,7 @@ Pour :
 
 Contre : 
  * Je suis une quiche en design et je voulais un site pas trop moche. Donc il me fallait un template sur lequel m'appuyer.
- * Mélanger le contenu et  l'ihm est une erreur résolue depuis 20 ans avec l'arrivée des CMS, il était hors de question de refaire l'erreur aujourd'hui.
+ * Mélanger le contenu et l'ihm est une erreur résolue depuis 20 ans avec l'arrivée des CMS, il était hors de question de refaire l'erreur aujourd'hui.
  * De nouvelles bonnes pratiques émergent régulièrement. Apprendre peut donc se faire en regardant le code de site fonctionnel, le comprendre, et in-fine le supprimer si ce code et cette bonne pratique ne nous intéresse pas.
 
 Le second point du Contre sur l'implication contenu/contenant était à lui seul un No-Go pour faire mon site à la main.
@@ -68,6 +68,7 @@ Hugo propose une chouette liste de thèmes dans lesquels je trouve [hello-friend
 
 Me voilà donc en train d'installer Hugo sur mon PC avec le thème sélectionné et je commence à trifouiller la bête avant de push sur github une première version sans prétention de mon site sur [netlify](https://www.netlify.com/), car une fois n'est pas coutume, les générateurs de site -dont Hugo- ont le bon goût d'être supporté par cet hébergeur gratuit que je recommande. 
 
-[^1]: Raison de sécurité / optimisation / légerté ultime / écoconception / Envie de découvrir ...
+[^1]: Raison de sécurité / optimisation / légèreté ultime / écoconception / Envie de découvrir ...
 
 {{< image src="/imgs/hugo.webp" alt="WebP Logo" position="center" style="border-radius: 8px;width: 650px;">}}
+

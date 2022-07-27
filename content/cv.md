@@ -20,10 +20,9 @@ date = "2021-02-12"
 * **Mission et tâches principales :**
   * Préparation du cycle de formation
   * Préparation du support, du parcours pédagogique
-  * Excécution des formations 
+  * Exécution des formations 
   
 * **KANBAN, MANAGEMENT, COACHING, FORMATION**
-
 
 ---
 ## Scrum Master / Product Owner pour &#9619;&#9619;&#9619;&#9619;&#9619;&#9619;&#9619;
@@ -32,7 +31,7 @@ date = "2021-02-12"
 <i class='icoDat'></i>Mai 2020 - Septembre 2020
 
 * **Projet de refonte applicative**
->Accompagnement d’une équipe de 4 personnes (2 devs & 2 experts) réalisant une refonte applicative d'un existant soumis à des contraintes forte **et** de disponibilités **et** de montée en charge. Les choix technologiques (Kafka / ELK / ...) sont restés à la discrétion  de l'équipe tandis que l'accompagnement du client, la collecte du besoin (existant ou non) et l'organisation générale étaient de ma responsabilité.
+>Accompagnement d’une équipe de 4 personnes (2 devs & 2 experts) réalisant une refonte applicative d'un existant soumis à des contraintes forte **et** de disponibilités **et** de montée en charge. Les choix technologiques (Kafka / ELK / ...) sont restés à la discrétion de l'équipe tandis que l'accompagnement du client, la collecte du besoin (existant ou non) et l'organisation générale étaient de ma responsabilité.
 
 * **Mission et tâches principales :**
   * Coordination des actions inter équipes
@@ -40,7 +39,6 @@ date = "2021-02-12"
   * Maturation du besoin
   
 * **KANBAN, MANAGEMENT, COACHING, FORMATION**
-
 
 
 ## Scrum Master pour &#9619;&#9619;&#9619;&#9619;&#9619;&#9619;&#9619;
@@ -60,7 +58,6 @@ date = "2021-02-12"
 * **SCRUM, KANBAN, MANAGEMENT, INFRASTRUCTURE, IC, ANSIBLE**
 
 
-
 ## Consultant - Coach Agile
 
 <i class='icoTag'></i>Lannion, domaine des ITs
@@ -75,7 +72,6 @@ date = "2021-02-12"
   * Accompagnement sur le moyen terme de l'équipe et des intervenants externes.
 
 * **SCRUM, COACHING, FORMATION**
-
 
 ## Chef de Projet & Scrum Master pour &#9619;&#9619;&#9619;&#9619;&#9619;&#9619;&#9619;
 
@@ -107,3 +103,5 @@ date = "2021-02-12"
   * Français
   * Anglais
   
+
+

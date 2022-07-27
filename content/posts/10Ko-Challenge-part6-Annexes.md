@@ -44,7 +44,7 @@ et [Zenika](https://zenika.com/) évidement : 2.75Mo dont 25% pour une police d'
 
 ## A propos du poids des requêtes
 
-* [Poids max des headers des responses HTTP](https://www.tutorialspoint.com/What-is-the-maximum-size-of-HTTP-header-values)
+* [Poids max des headers des réponses HTTP](https://www.tutorialspoint.com/What-is-the-maximum-size-of-HTTP-header-values)
 * [Aidez vos utilisateurs à consommer moins de data](https://css-tricks.com/help-users-save-data/)
 * [Header HTTP Save-Data](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Save-Data)
 * [la fonctionnalité CSS prefers-reduced-data](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-data)
@@ -71,7 +71,6 @@ et [Zenika](https://zenika.com/) évidement : 2.75Mo dont 25% pour une police d'
 * [Gemini : un protocole minimaliste en remplacement d'HTTP](https://ploum.net/gemini-le-protocole-du-slow-web/)
 * [le MVP](https://blog.myagilepartner.fr/index.php/2017/01/02/mvp-minimum-viable-product/)
 
-
 ## A propos de l'éco-conception
 
 * [Une chouette série d'article](https://alexsoyes.com/eco-conception-web)
@@ -84,4 +83,5 @@ et [Zenika](https://zenika.com/) évidement : 2.75Mo dont 25% pour une police d'
 * [CSP](https://content-security-policy.com/)
 * [CSP inline](https://content-security-policy.com/examples/allow-inline-style/)
 * [Application des CSP pour netlify](https://docs.netlify.com/routing/headers/#syntax-for-the-headers-file)
+
 

@@ -17,7 +17,7 @@ tags:
 
 > Le but de cette série d'articles est de démonter concrètement que réaliser un site internet restant sous la barre des 10Ko tout compris est une entreprise compliquée mais réalisable si nous savons opérer les bons sacrifices.
 
-La moyenne des poids d'un site internet plafonnait à **800ko en 2011**, était de **2.4Mo en 2016**, et aujourd'hui nous avons une moyenne de **5Mo pour le top 10** des sites internets en France... ça ne risque pas de s'améliorer et l'utopie d'un réseau plus rapide (5G) capable d'engloutir ce poids est une utopie. Il est temps de faire machine arrière.
+La moyenne des poids d'un site internet plafonnait à **800ko en 2011**, était de **2.4Mo en 2016**, et aujourd'hui nous avons une moyenne de **5Mo pour le top 10** des sites internet en France... ça ne risque pas de s'améliorer et l'utopie d'un réseau plus rapide (5G) capable d'engloutir ce poids est une utopie. Il est temps de faire machine arrière.
 
 Alors prenons un peu de hauteur sur ce Challenge 10ko et tentons de faire le point sur les stratégies possibles avant de tenter une extrapolation vers des projets de plus grandes envergures.
 
@@ -31,9 +31,9 @@ De très nombreux chemins existent pour lutter contre l'obésité du web.
 
 En parler autour de vous sera déjà une bonne chose. Sensibiliser les collègues, les amis, partager ces articles :D 
 
-Les options techniques sont légions pour optimiser le coût de transit sur internet. Cache client, cache serveur, optimisation d'images, compression, minification, sprites, etc... la liste est trop longue pour énumérer ce qui vous est déjà certainement connu.
+Les options techniques sont légion pour optimiser le coût de transit sur internet. Cache client, cache serveur, optimisation d'images, compression, minification, sprites, etc… la liste est trop longue pour énumérer ce qui vous est déjà certainement connu.
 
-Côté algo il faut réfléchir aussi à des façons de distribuer la data de manière plus intelligente et réfléchir pourquoi pas à revenir à un moteur de recherche et une pagination de résultat plutôt que d'implémenter un scroll infini qui affichera toutes vos données ce qui a de facto un coût terrible en terme de consommation réseau et a tendance à ralentir les perfs sur les smartphones les plus anciens.
+Côté algo il faut réfléchir aussi à des façons de distribuer la data de manière plus intelligente et réfléchir pourquoi pas à revenir à un moteur de recherche et une pagination de résultat plutôt que d'implémenter un scroll infini qui affichera toutes vos données ce qui a de facto un coût terrible en termes de consommation réseau et a tendance à ralentir les perfs sur les smartphones les plus anciens.
 
 L'évolution des technologies continuent également de jouer en la faveur d'un internet plus léger. Les headers HTTP évoluent et permettent par exemple aujourd'hui à un client de spécifier qu’il souhaite économiser de la data ([Save-Data](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Save-Data) & [prefers-reduced-data](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-data)). Encore faudrait-il savoir que ces options existent...
 
@@ -78,7 +78,7 @@ Lorsqu'au travers de mon métier de Coach je vois mes interlocuteurs me dire que
 
 Un MVP c'est censé représenter 5% de vos fonctionnalités, pas 99%...
 
-Les exemples de ce gâchis sont légions et que ce soit sur le net ou dans nos applications de la vie quotidienne on se dit qu'il serait grand temps de remettre la valeur au centre des préoccupations.
+Les exemples de ce gâchis sont légion et que ce soit sur le net ou dans nos applications de la vie quotidienne on se dit qu'il serait grand temps de remettre la valeur au centre des préoccupations.
 
 Sources : 
  - [80% de gras sur les sites de voyage](https://www.tom.travel/2020/03/26/le-chiffre-de-la-semaine-80-pourcent/), costaud le bébé.
@@ -97,3 +97,5 @@ Par ce Challenge 10Ko j'espère vous avoir donné envie de faire le meilleur de 
 Sources : 
  - le site normal des [chemins de fer Allemand](https://reiseauskunft.bahn.de/) et ses 2.3Mo versus son [équivalent lite](https://reiseauskunft.bahn.de/bin/query.exe/el) et ses 4.4Ko
  - Gmail [version classique](https://mail.google.com/mail/u/0/#inbox) et ses 19.3Mo versus sa [version lite](https://mail.google.com/mail/u/0/h/) et ses 57ko et la liste des [fonctionnalités sacrifiées dans son mode lite](https://support.google.com/mail/answer/15049?hl=fr)
+
+
