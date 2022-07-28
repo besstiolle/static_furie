@@ -1,6 +1,6 @@
 ---
 title: "Supprimer un très grand nombre de fichier sous Debian"
-description: "Mais alors quand vous avez énormement de fichiers"
+description: "Mais alors quand vous avez énormément de fichiers"
 date: 2014-07-13T00:00:00+01:00
 aliases: ["/news/55/15/Debian-supprimer-un-tres-grand-nombre-de-fichiers.html"]
 draft: false
@@ -15,7 +15,7 @@ tags:
 
 ## Supprimer un très grand nombre de fichiers
 
-Il y a quelques jours je me suis rendu compte que le répertoire des sessions Apache sur le serveur de CmsMadeSimple ne se vidait plus. Sans connaitre l'origine de cette étrangeté je me retrouvais face à un double soucis : le web serveur Apache tombait alors même qu'il y avait encore de la place sur le disque dur (plus moyen de créer de nouvelle session dans ce répertoire déjà bourré) et impossible pour moi, néophyte, de vider ce satané répertoire à coup de commande classique de suppression Unix, celle ci me retournant l'erreur
+Il y a quelques jours je me suis rendu compte que le répertoire des sessions Apache sur le serveur de CmsMadeSimple ne se vidait plus. Sans connaitre l'origine de cette étrangeté je me retrouvais face à un double souci : le web serveur Apache tombait alors même qu'il y avait encore de la place sur le disque dur (plus moyen de créer de nouvelle session dans ce répertoire déjà bourré) et impossible pour moi, néophyte, de vider ce satané répertoire à coup de commande classique de suppression Unix, celle-ci me retournant l'erreur
 
 > arg list too long
 
@@ -35,13 +35,13 @@ La solution porte sur les commandes `xargs unix`.
 find ./sessions/ -type f -cmin +3600 -print0 | xargs -r -0 rm
 ```
 
-En français : trouve moi les fichiers de plus de 3600 secondes dans le répertoire sessions, et pour chacun d'entre eux, exécute la commande rm. Ainsi plus de limitation, la suppression se faisant fichier par fichier.
+En français : trouve-moi les fichiers de plus de 3600 secondes dans le répertoire sessions, et pour chacun d'entre eux, exécute la commande rm. Ainsi plus de limitation, la suppression se faisant fichier par fichier.
 
 Par contre j'ai trouvé le traitement extrêmement long (plusieurs heures). J'ai donc arrêté et repris le traitement à intervalle régulier tout en exécutant cette ligne pour connaitre le nombre de fichier restant dans ce maudit répertoire.
 
 ```bash
 find ./sessions/ | wc -l
 ```
-Ce qui permet de se rendre compte de l'étendu des dégâts lorsque vous dépassez les millions de fichier...
+Ce qui permet de se rendre compte de l'étendue des dégâts lorsque vous dépassez les millions de fichier...
 
 Reste à comprendre pourquoi Apache (ou php) ne supprime pas ces fichiers.
