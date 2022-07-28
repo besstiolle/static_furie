@@ -33,16 +33,19 @@ HUGO_ENABLEGITINFO = "true"
 from = "/npmjs/*"
 to = "/npmjs/"
 status = 200
+force = true # COMMENT: ensure that we always redirect
 
 #Source : https://gohugo.io/hosting-and-deployment/hosting-on-netlify/
 
 # Bellow : custom routing for Plausible Scripting
 [[redirects]]
-  from = "/js/script.js"
-  to = "https://plausible.io/js/script.js"
-  status = 200
+from = "/js/script.js"
+to = "https://plausible.io/js/script.js"
+status = 200
+force = true # COMMENT: ensure that we always redirect
 
 [[redirects]]
-  from = "/api/event"
-  to = "https://plausible.io/api/event"
-  status = 200
+from = "/api/event"
+to = "https://plausible.io/api/event"
+status = 200
+force = true # COMMENT: ensure that we always redirect
