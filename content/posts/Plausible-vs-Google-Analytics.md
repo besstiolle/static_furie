@@ -34,7 +34,7 @@ Sauf que l'auto hosting a ses limites lorsque nous ne sommes pas constamment la 
 
 L'alternative à l'auto hosting est le SAAS (Software As a Service) mais celui-ci a un coût. Chez Matomo le coût d'entrée est de [19€ / mois pour 50k hits](https://fr.matomo.org/pricing/) ce qui est bien au-delà de mes humbles compteurs (retirez 3 chiffres et vous êtes bon.)
 
-Après une courte discussion avec mes collègues de chez [Zenika](https://www.zenika.com/) pour prendre la température j'ai pu valider qu'il n'y avait pas de miracle : eg, une offre SAAS d'entrée de gamme gratuite respectant RGPD.
+Après une courte discussion avec mes collègues de chez [Zenika](https://www.zenika.com/) pour prendre la température j'ai pu valider qu'il n'y avait pas de miracle : c'est à dire une offre SAAS d'entrée de gamme gratuite respectant RGPD.
 
 Par contre j'ai découvert deux trois solutions que je vais vous partager ici et faire un focus sur mon choix personnel.
 
