@@ -35,3 +35,14 @@ to = "/npmjs/"
 status = 200
 
 #Source : https://gohugo.io/hosting-and-deployment/hosting-on-netlify/
+
+# Bellow : custom routing for Plausible Scripting
+[[redirects]]
+  from = "/js/script.js"
+  to = "https://plausible.io/js/script.js"
+  status = 200
+
+[[redirects]]
+  from = "/api/event"
+  to = "https://plausible.io/api/event"
+  status = 200
