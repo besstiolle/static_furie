@@ -2,7 +2,7 @@
 title: "Plausible, un remplaçant à Google Analytics ?"
 description: "A l'heure du RGPD il devient urgent de sortir des griffes du tout gratuit de Google Analytics."
 date: 2022-07-28T00:00:00+01:00
-draft: true
+draft: false
 toc: true
 images:
 tags:
