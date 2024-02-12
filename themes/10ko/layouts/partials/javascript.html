@@ -5,7 +5,7 @@
 {{/* $secureJS := slice $main $menu | resources.Concat "out.js" | resources.Minify | resources.Fingerprint "sha512" */}}
 {{/*<script type="text/javascript" src="{{ $secureJS.RelPermalink }}" integrity="{{ $secureJS.Data.Integrity }}"></script> */}}
 
-<script defer data-domain="kdanezis.fr" src="/js/script.js"></script>
+{{/* <script defer data-domain="kdanezis.fr" src="/js/script.js"></script> */}}
 
 {{- if .Site.GoogleAnalytics }}
     {{ template "_internal/google_analytics.html" . }}
