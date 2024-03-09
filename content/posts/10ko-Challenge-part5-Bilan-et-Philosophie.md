@@ -50,7 +50,7 @@ Faire moins et mieux. C'est le mantra que j'essaie par ce challenge d'initier da
 Entre mon précédent site internet et cette nouvelle version, j'ai fait le choix de faire moins 
  - J'ai retiré un nuage de mot qui reprenait les tags des articles de blogs car il était inutilisé 
  - J'ai retiré le moteur de recherche car google est mon ami (ou pas)
- - J'ai retiré les commentaires car aujourd'hui j'estime que l'interaction humaine se fait ailleurs, que ce soit en direct, sur [twitter](twitter.com/besstiolle), ou sur le Slack de ma boite
+ - J'ai retiré les commentaires car aujourd'hui j'estime que l'interaction humaine se fait ailleurs, que ce soit en direct ou sur le Slack de ma boite
  - J'ai retiré toute notion de design par l'image pour ne conserver qu'une interface sobre et sombre car j'apprécie de plus en plus moi-même de voir les sites en dark-mode.
  - J'ai retiré tout le contenu devenu inutile
  - J'ai retiré toutes les actions JS inutiles également
