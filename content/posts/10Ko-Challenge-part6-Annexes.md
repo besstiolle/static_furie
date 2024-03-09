@@ -76,7 +76,7 @@ et [Zenika](https://zenika.com/) évidement : 2.75Mo dont 25% pour une police d'
 * [Une chouette série d'article](https://alexsoyes.com/eco-conception-web)
 * [115 bonnes pratiques](https://collectif.greenit.fr/ecoconception-web/115-bonnes-pratiques-eco-conception_web.html)
 * [Un outil pour analyser l'éco-conception des programmes Python](https://www-lesechos-fr.cdn.ampproject.org/c/s/www.lesechos.fr/amp/1270217)
-* [Un outil payant pour analyser les applications & sites web ](https://greenspector.com/fr/accueil/). Et de la même société que ci dessus, une très bonne analyse à lire](https://greenspector.com/fr/limiter-les-donnees-internet-pour-reduire-impact-numerique/)
+* [Un outil payant pour analyser les applications & sites web ](https://greenspector.com/fr/accueil/). Et de la même société que ci dessus, [une très bonne analyse à lire](https://greenspector.com/fr/limiter-les-donnees-internet-pour-reduire-impact-numerique/)
 
 ## A propos de la sécurisation
 
