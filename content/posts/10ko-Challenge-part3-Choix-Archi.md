@@ -23,6 +23,8 @@ Et aujourd'hui nous prenons de la hauteur pour analyser dans les grandes lignes 
 
 J'en ai déjà parlé dans d'autres articles, mais pour démarrer ce challenge, j'avais le choix entre démarrer de zéro ou prendre un outil qui puisse m'aider. Je suis un grand fan des Cms, notamment de [CmsMadeSimple](https://www.cmsmadesimple.org/) mais là je souhaitais faire un site full static[^1] même si cela sortait de la dimension du challenge 10ko
 
+[^1]: Raison de sécurité / optimisation / légèreté ultime / écoconception / Envie de découvrir ...
+
 Exit donc les CMS qui reconstruisent les réponses http à la volée et autres solutions client-side full JS qui nécessitent généralement de démarrer par un téléchargement du client JS lourd de plusieurs centaines de kilo.
 
 Je me suis beaucoup baladé sur des sites tels que https://jamstack.org/ qui proposent de manière ludique un grand nombre d'informations sur deux types de moteurs : les générateurs de sites et les CMS dits headless. 
@@ -68,7 +70,6 @@ Hugo propose une chouette liste de thèmes dans lesquels je trouve [hello-friend
 
 Me voilà donc en train d'installer Hugo sur mon PC avec le thème sélectionné et je commence à trifouiller la bête avant de push sur github une première version sans prétention de mon site sur [netlify](https://www.netlify.com/), car une fois n'est pas coutume, les générateurs de site -dont Hugo- ont le bon goût d'être supporté par cet hébergeur gratuit que je recommande. 
 
-[^1]: Raison de sécurité / optimisation / légèreté ultime / écoconception / Envie de découvrir ...
 
 {{< image src="/imgs/hugo.webp" alt="WebP Logo" position="center" style="border-radius: 8px;width: 650px;">}}
 
