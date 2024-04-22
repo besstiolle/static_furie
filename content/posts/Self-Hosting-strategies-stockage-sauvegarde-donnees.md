@@ -1,6 +1,5 @@
 ---
 title: "Self-Hosting : Quelles stratégies pour le stockage et la sauvegarde de ses données?"
-description: "Présentation des stragégies de sauvegarde de vos données dans le Self-Hosting"
 description: "Présentation des stratégies de sauvegarde de vos données dans le Self-Hosting"
 date: 2024-04-21T00:00:00+01:00
 draft: false
@@ -20,7 +19,6 @@ Cette série d’articles autour du self-hosting est rédigée au fil de l’eau
 
 ## Définitions pour cet article
 
-**Donnée chaude :** on parle de données chaudes pour toutes les données que vos applications et votre infrastructure manipulent constamment : le système (l’OS), le moteur supportant vos applications, le code des applications elles-même et leur propre fichiers de configuration. Ces données sont généralement caractérisées par un taux de lecture/écriture intense tout au long de la journée (on parle de I/O)
 **Donnée chaude :** On parle de données chaudes pour toutes les données que vos applications et votre infrastructure manipulent constamment : le système (l’OS), le moteur supportant vos applications, le code des applications elles-même et leur propre fichiers de configuration. Ces données sont généralement caractérisées par un taux de lecture/écriture intense tout au long de la journée (on parle de I/O)
 
 **Donnée tiède :** On y retrouve des données manipulées par les applications installées mais qui ne sont pas utilisées constamment. On peut évoquer les photos stockées dans un logiciel de galerie photo, les messages stockés dans un logiciel de chat, les binaires téléchargés par un logiciel de partage de fichier.
