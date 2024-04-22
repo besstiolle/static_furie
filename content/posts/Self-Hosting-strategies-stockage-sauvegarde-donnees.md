@@ -1,6 +1,7 @@
 ---
 title: "Self-Hosting : Quelles stratégies pour le stockage et la sauvegarde de ses données?"
 description: "Présentation des stragégies de sauvegarde de vos données dans le Self-Hosting"
+description: "Présentation des stratégies de sauvegarde de vos données dans le Self-Hosting"
 date: 2024-04-21T00:00:00+01:00
 draft: false
 toc: true
@@ -20,6 +21,7 @@ Cette série d’articles autour du self-hosting est rédigée au fil de l’eau
 ## Définitions pour cet article
 
 **Donnée chaude :** on parle de données chaudes pour toutes les données que vos applications et votre infrastructure manipulent constamment : le système (l’OS), le moteur supportant vos applications, le code des applications elles-même et leur propre fichiers de configuration. Ces données sont généralement caractérisées par un taux de lecture/écriture intense tout au long de la journée (on parle de I/O)
+**Donnée chaude :** On parle de données chaudes pour toutes les données que vos applications et votre infrastructure manipulent constamment : le système (l’OS), le moteur supportant vos applications, le code des applications elles-même et leur propre fichiers de configuration. Ces données sont généralement caractérisées par un taux de lecture/écriture intense tout au long de la journée (on parle de I/O)
 
 **Donnée tiède :** On y retrouve des données manipulées par les applications installées mais qui ne sont pas utilisées constamment. On peut évoquer les photos stockées dans un logiciel de galerie photo, les messages stockés dans un logiciel de chat, les binaires téléchargés par un logiciel de partage de fichier.
 
@@ -148,24 +150,29 @@ Voilà un exemple type de **données tièdes** qui ne nécessitent pas d’I/O t
 La notion de base de données local est à traiter individuellement. Je n'ai pas encore d'application dont la base de donnée ne soit pas auto-générée par des données personnelles externes. Donc si je perds les bases de données, je suis à priori capable de reconstituer avec peu d'effort la base.
 
 Contre exemple : Avec un logiciel proposant de mettre en lumière mes finances, il est probable que je souhaites sauvegarder cela en lieu sûr, surtout si j'ai mis de l'énergie dans la configuration de ce logiciel. (prévisionnel, emprunt, ...).
+Contre exemple : Avec un logiciel proposant de mettre en lumière mes finances, il est probable que je souhaite sauvegarder cela en lieu sûr, surtout si j'ai mis de l'énergie dans la configuration de ce logiciel. (prévisionnel, emprunt, ...).
 
 A voir individuellement quel traitement vous souhaitez appliquer pour la sauvegarde.
 
 Dans tous les cas les données de bdd devraient être au plus proche de l'OS.
+Dans tous les cas, les données de bdd devraient être au plus proche de l'OS.
 
 ### Données chaudes :  Les autres données des applications 
+### Données chaudes :  Les autres données des applications
 
 Ici nous évoquons le cache des applications, les miniatures des images, les bdd servant à indexer vos données personnelles et ainsi de suite.
 
 Elles ne représentent pas un caractère critique au sens de vos données personnelles et peuvent généralement être reconstituées par les applications elles même si vous faites une réinstallation
 
 A l'inverse ces données de miniatures et de cache applicatifs sont bien plus accédées que les photos dans leur tailles d'origine. Il est donc important de localiser ces données au plus proche de l'OS. C'est en tout cas le choix que j'ai fait.
+A l'inverse, ces données de miniatures et de cache applicatifs sont bien plus accédées que les photos dans leur taille d'origine. Il est donc important de localiser ces données au plus proche de l'OS. C'est en tout cas le choix que j'ai fait.
 
 En conséquence de ce choix, j’ai réalisé la même mécanique que pour les configurations docker-compose et .env, un simple script bash lancé à la demande réalisera une archive compressée de toutes ces données ce qui me permet de sauvegarder si besoin et de redéployer sur une nouvelle infrastructure avant de redémarrer docker.
 
 Je n'ai pas peur de perdre ces données, elles sont générées automatiquement par l'application.
 
 **Note :** Ces données nécessitent que l’image docker soit éteinte pour être correctement sauvegardées. 
+**Note :** Ces données nécessitent que l’image docker soit éteinte pour être correctement sauvegardées.
 
 ## En résumé
 
@@ -173,6 +180,7 @@ Je n'ai pas peur de perdre ces données, elles sont générées automatiquement 
 |----------|------|------|------|
 | **Personnelles** | cruciale | NAS + copie sur Cloud en auto | auto |
 | **Base de données** | A définir | OS + A définir | auto |
+| **Base de données** | A définir | OS + À définir | auto |
 | **Installation** | importante | OS + copie sur OS | manuel |
 | **OS** | Moyenne | OS only | manuel |
 | **Docker compose** | Moyenne | OS + copie sur NAS | manuel |
@@ -181,12 +189,15 @@ Je n'ai pas peur de perdre ces données, elles sont générées automatiquement 
 ## Usage du cloud
 
 Pour mon setup j'ai considéré la nécessité de ne sauvegader que des données cruciales : mes données personnelles.
+Pour mon setup j'ai considéré la nécessité de ne sauvegarder que des données cruciales : mes données personnelles.
 
 Ainsi, et avec l'aide des capacités de mon NAS Synology 2020j une tâche nocturne copie les données personnelles présentes sur le NAS vers mon opérateur cloud.
 
 Etant données que toutes mes données personnelles + celles de la famille sont sauvegardées, j'atteint actuellement un total de près de 1To de données pour un total de ~6€ / mois. Le prix de la tranquillité 
+Etant données que toutes mes données personnelles + celles de la famille sont sauvegardées, j'atteins actuellement un total de près de 1To de données pour un total de ~6€ / mois. Le prix de la tranquillité
 
 ## Voir également : 
+## Voir également :
  - [Comment restaurer les datas avec Synology Hyper Backup ]({{< ref "/Restaurer-data-Synology-Hyper-Backup" >}})
 
 {{< image src="/imgs/dogsAndComputer.avif" alt="Des chiens et un ordinateur" position="center" style="border-radius: 8px;width: 650px;">}}

@@ -19,7 +19,7 @@ Cette série d’articles autour du self-hosting est rédigée au fil de l’eau
 
 ## Ce que ne fera pas ce guide
 
-Avant de vous lancer tête baissée dans ce guide je me permet de vous pointer ce qui ne sera pas étudié dans ce guide : 
+Avant de vous lancer tête baissée dans ce guide je me permet de vous pointer ce qui ne sera pas étudié dans ce guide :
 
  - Quel matériel ? ([j'en parles ailleurs]({{< ref "/Self-Hosting-comment-choisir-votre-materiel" >}}))
  - Comment sauvegarder vos données ([j'en parles ailleurs]({{< ref "/Self-Hosting-strategies-stockage-sauvegarde-donnees" >}}))
@@ -29,7 +29,7 @@ Ici je vais dérouler les lignes de commandes qui permettent in-fine d'avoir une
 
 ## Installation de l'OS
 
-Je vous propose de démarrer avec un choix stable et suffisament diffusé pour que vous puissiez trouver votre bonheur niveau documentation : Debian. 
+Je vous propose de démarrer avec un choix stable et suffisamment diffusé pour que vous puissiez trouver votre bonheur niveau documentation : Debian.
 
 **Note :** Au moment de l'écriture de cet article nous en sommes à Debian 12. Le reste du tuto est donc adapté pour cette version et pourra nécessiter des modifications dans le futur.
 
@@ -46,7 +46,7 @@ Concernant ce dernier point je ne peux évidemment pas vous guider. Les touches 
 
 Lancez l'installation de Debian. Notez le nom de l'utilisateur non root que vous allez créer. Pour la suite du tuto l'utilisateur ici sera appelé **alice**
 
-Une fois l'installation terminée le laptop redémarre, retirez la clé usb. Il existe 3 cas : 
+Une fois l'installation terminée le laptop redémarre, retirez la clé usb. Il existe 3 cas :
  - Vous arrivez sur le shell de Debian et opérez la suite sur ce shell
  - Vous arrivez sur le bureau Debian, ouvrez un terminal et opérez la suite sur ce shell
  - Vous pilotez en SSH depuis un autre PC.
@@ -67,25 +67,25 @@ Inutile, décocher l'option si elle vous est proposée.
 
 ### Options : se connecter au réseau WIFI
 
-Cela peut être utile car configurer le wifi une fois passé l'assistant, en pure ligne de commande, est un poil compliqué quand on débute. 
+Cela peut être utile car configurer le wifi une fois passé l'assistant, en pure ligne de commande, est un poil compliqué quand on débute.
 
-L'option cable RJ45 reste néanmoins la solution la plus stable et la plus fiable dans tous les cas.
+L'option câble RJ45 reste néanmoins la solution la plus stable et la plus fiable dans tous les cas.
 
 ## Votre bac à sable.
 
-Vous voici avec un énorme bac à sable. Il est temps de jouer, et pour commencer je vous propose de nombreux sujets à grapiller. Vous prenez ou vous ne prenez pas selon si vous pensez que cela à du sens. 
+Vous voici avec un énorme bac à sable. Il est temps de jouer, et pour commencer je vous propose de nombreux sujets à grappiller. Vous prenez ou vous ne prenez pas selon si vous pensez que cela à du sens.
 
 ### Sauvegardez votre OS
 
-[Timeshift](https://teejeetech.com/timeshift/) fait des merveilles. J'en parles dans un [autre article sur la notion de Sauvegarde]({{< ref "/Self-Hosting-strategies-stockage-sauvegarde-donnees" >}}), je ne reviens pas dessus et de très nombreux articles sur le net existent pour décrire son fonctionnement.
+[Timeshift](https://teejeetech.com/timeshift/) fait des merveilles. J'en parlais dans un [autre article sur la notion de Sauvegarde]({{< ref "/Self-Hosting-strategies-stockage-sauvegarde-donnees" >}}), je ne reviens pas dessus et de très nombreux articles sur le net existent pour décrire son fonctionnement.
 
-Je réconise énormement son usage pour faire une snapshot "avant toute opération". 
+Je préconise énormément son usage pour faire une snapshot "avant toute opération".
 
 ### Sécuriser votre accès SSH
 
 Utile uniquement si vous avez activé le serveur SSH durant l'installation. Attention : va couper votre accès SSH qu'il faudra reconfigurer sur le poste distant.
 
-**Ligne de commande a réaliser en root (ou sudo, j'y viens plus loin)**
+**Ligne de commande à réaliser en root (ou sudo, j'y viens plus loin)**
 
 ```shell
 nano /etc/ssh/sshd_config.d/local.conf
@@ -99,7 +99,7 @@ Port xx
 PermitRootLogin no
 ```
 
-Avec xx le n° de port de votre choix. Evitez 22 et 222 qui sont des évidences.
+Avec xx le n° de port de votre choix. Évitez 22 et 222 qui sont des évidences.
 
 `PermitRootLogin no` est un basic qui évite une connexion root et oblige à un potentiel robot de deviner que votre utilisateur est **alice**
 
@@ -111,20 +111,20 @@ Redémarrez le service sshd pour prendre en compte ces modifications.
 
 ### Installer et configurer SUDO
 
-Un classique de la sécurité, il evite de passer son temps en root et permet donc de limiter une mauvaise manipulation. Je ne m'éttendrais pas sur ce sujet puisque ce n'est pas le but de ce guide, je vous donne ici la conf sudo telle que je l'ai définit sur mon infrastructure Self-Hosting.
+Un classique de la sécurité, il évite de passer son temps en root et permet donc de limiter une mauvaise manipulation. Je ne m'étendrai pas sur ce sujet puisque ce n'est pas le but de ce guide, je vous donne ici la conf sudo telle que je l'ai définie sur mon infrastructure Self-Hosting.
 
 ```shell
 apt update
 apt install sudo
 ```
 
-puis 
+puis
 
 ```shell
 visudo -f /etc/sudoers.d/alice
 ```
 
-Le contenu qui me permet en tant que **alice** d'utiliser avec des droits root les outils nano (éditeur), apt (gestionnaire de paquet), su (impersonnalisation) ou encore créer des dossiers: 
+Le contenu qui me permet en tant que **alice** d'utiliser avec des droits root les outils nano (éditeur), apt (gestionnaire de paquet), su (impersonnalisation) ou encore créer des dossiers:
 
 ```shell
 # A placer dans /etc/sudoers.d/alice avec visudo -f /etc/sudoers.d/alice
@@ -152,9 +152,9 @@ Cmnd_Alias MY_CMDS = /usr/bin/nano, /usr/bin/apt, /usr/bin/su, /usr/bin/mkdir
 MY_USERS   ALL=(ALL) MY_CMDS
 ```
 
-Son usage par exemple : 
+Son usage par exemple :
 
-Avant, en `root` : 
+Avant, en `root` :
 
 ```shell
 apt update
@@ -163,7 +163,7 @@ commande bizarre
   > succès et c est la cata
 ```
 
-Après, en `alice` : 
+Après, en `alice` :
 
 ```shell
 sudo apt update
@@ -172,7 +172,7 @@ sudo commande bizarre
   > echec, alice n a pas le droit de réaliser cette commande.
 ```
 
-A partir de la suite de ce guide je pars du principe que vous êtes connectés sous le compte **alice** et que sudo est correctement installé. 
+A partir de la suite de ce guide je pars du principe que vous êtes connectés sous le compte **alice** et que sudo est correctement installé.
 
 ### Installer deux trois logiciels sympas
 
@@ -181,7 +181,7 @@ sudo apt update
 sudo apt install nano btop
 ```
 
-Le premier `nano` est un éditeur de texte qui vous évite les boutons de `vi` et la sobriété de `emacs`. `btop` vous permet de conserver un oeil sur l'étât général de consommation CPU, GPU, mémoire et disque. Un incontournable.
+Le premier `nano` est un éditeur de texte qui vous évite les boutons de `vi` et la sobriété de `emacs`. `btop` vous permet de conserver un œil sur l'état général de consommation CPU, GPU, mémoire et disque. Un incontournable.
 
 
 ### Connectez un répertoire partagé NFS de votre NAS
@@ -191,16 +191,16 @@ Pratique pour augmenter la taille du disque dur de votre matériel et pour y acc
 Dans l'ordre :
  - On ouvre sur le NAS le répertoire partagé avec le protocole NFS (n'est pas le propos de ce guide, je passe)
  - On installe le client NFS
- - On créé le répertoire local
- - On configure un montage persistant pour qu'au prochain rebbot tout reste connecté.
+ - On crée le répertoire local
+ - On configure un montage persistant pour qu'au prochain reboot tout reste connecté.
  - On "mount" (monter) le répertoire NFS sur un répertoire local
  - On valide le montage.
 
-Exemple : 
- - Le répertoire sur mon NAS Synology via NFS est accessible sur `192.168.1.99:/volume1/public` 
+Exemple :
+ - Le répertoire sur mon NAS Synology via NFS est accessible sur `192.168.1.99:/volume1/public`
  - Je veux le mapper sur `/mnt/public`
 
-Cela donne donc : 
+Cela donne donc :
 
 
 ```shell
@@ -216,7 +216,7 @@ sudo mkdir -p /mnt/public
 sudo nano /etc/fstab
 ```
 
-Et y ajouter la configuration suivante : 
+Et y ajouter la configuration suivante :
 
 ```shell
 192.168.1.99:/volume1/public             /mnt/public                     nfs defaults,_netdev,nofail,x-systemd.automount 0 0
@@ -234,7 +234,7 @@ et toujours en root à monter une première fois manuellement le lien (au lieu d
 mount /mnt/public
 ```
 
-Vous pouvez maintenant accéder à `/mnt/public` qui contient les données de votre NAS. Ressortez préalablement de ce répertoire pour refresh la vue si vous y étiez déjà avant de faire la commande `mount`. Normalement un reboot du PC conservera le lien.
+Vous pouvez maintenant accéder à `/mnt/public` qui contient les données de votre NAS. Ressortez préalablement de ce répertoire pour refresh la vue si vous y étiez déjà avant de faire la commande `mount`. Normalement un reboot du PC conserve le lien.
 
 ### Eviter que le laptop s'éteigne quand l'on referme l'écran
 
@@ -257,7 +257,7 @@ systemctl restart systemd-logind
 
 ### Faire un benchmark de votre Laptop
 
-Très utile pour connaitre sa puissance de feu, à combiner avec un relevé de la consommation électrique du laptop batterie pleine avec un wattmètre. Voici mes benchmarks en date du 21 avril 2024. 
+Très utile pour connaître sa puissance de feu, à combiner avec un relevé de la consommation électrique du laptop batterie pleine avec un wattmètre. Voici mes benchmarks en date du 21 avril 2024.
 
 le laptop sélectionné pour faire mon setup est un Asus [UX303L](https://searx.be/search?q=UX303L&categories=general&language=fr) poussé à 12Go de RAM
 
@@ -270,7 +270,7 @@ le laptop sélectionné pour faire mon setup est un Asus [UX303L](https://searx.
 | [Asus UX303L](https://searx.be/search?q=UX303L&categories=general&language=fr)  | 7 | 2 500 | 4 | 8+4 |
 | [HP Elitebook 8740w  i7 vpro 8Go](https://support.hp.com/fr-fr/drivers/hp-elitebook-8740w-mobile-workstation/4138087) | 30 | 2 500 | 4 | 8 |
 
-Autres données comparables : 
+Autres données comparables :
 
 |Dénomination | Conso au repos (Watt) | Sysbench (events / seconde) | Core | RAM (Go) |
 |----------|-------------|------|------|------|
@@ -293,16 +293,16 @@ Le résultat au bout de 10 secondes affiche ceci (exemple)
 > sysbench 1.0.20 (using system LuaJIT 2.0.5)
 >
 > [...]
-> 
+>
 > **CPU speed: events per second: 33 023.88**
-> 
+>
 > [...]
 
 Bon je triche un peu, ici j'ai fait tourner la commande sur ma tour équipée d'un Rysen 5 5600x... ça aide.
 
-Cela vous permet de savoir dans le cas présent que votre matériel a un score comparable avec ma propre liste. D'expérience, un score supérieur à 2 500 est un très bon score pour une infra Self-Hosting de moyenne envergure sans usage extrème (IA ou autre serveur de jeu). En dessous de 1 000, ne dépassez pas les 3 logiciels surtout si vous avez de la manipulation de médias vidéo ou photo.
+Cela vous permet de savoir dans le cas présent que votre matériel a un score comparable avec ma propre liste. D'expérience, un score supérieur à 2 500 est un très bon score pour une infra Self-Hosting de moyenne envergure sans usage extrême (IA ou autre serveur de jeu). En dessous de 1 000, ne dépassez pas les 3 logiciels surtout si vous avez de la manipulation de médias vidéo ou photo.
 
-### Paramétrer une ip fixe 
+### Paramétrer une ip fixe
 
 #### Cas d'une connexion Wifi
 
@@ -312,7 +312,7 @@ Utile si comme moi vous hardcodez les ip de vos machines. On va partir du princi
 
 [^3]: L'ip de votre box/passerelle peut également être trouvée par la commande `ip route show` si vous avez configuré votre réseau avec l'assistant Debian
 
-Editez le contenu du fichier de configuration du réseau en partant du principe que votre équipement wifi porte l'identifiant `wlp2s0`, vous pouvez vous en assure en tapant la ligne de commande `ip a` qui vous retourne généralement au moins deux blocs : `lo` (interface loopback, boucle locale) et la seconde interface `wlp2s0` dans mon propre cas de figure ou encore `ens123` pour une carte réseau éternet RJ45, les valeurs restent propre à chaque ordinateur.
+Editez le contenu du fichier de configuration du réseau en partant du principe que votre équipement wifi porte l'identifiant `wlp2s0`, vous pouvez vous en assure en tapant la ligne de commande `ip a` qui vous retourne généralement au moins deux blocs : `lo` (interface loopback, boucle locale) et la seconde interface `wlp2s0` dans mon propre cas de figure ou encore `ens123` pour une carte réseau éthernet RJ45, les valeurs restent propre à chaque ordinateur.
 
 Commençons donc à éditer.
 
@@ -363,7 +363,7 @@ sudo ifup wlp2s0
 
 #### Cas d'une connexion filaire
 
-Dans le cas ou vous fonctionnez en filaire (cable eternet RJ45) vous aurez plutôt quelque chose de ce genre
+Dans le cas ou vous fonctionnez en filaire (câble ethernet RJ45) vous aurez plutôt quelque chose de ce genre
 
 ```shell
 sudo nano /etc/network/interfaces
@@ -422,17 +422,17 @@ La commande `ip a` doit vous donner le résultat escompté
 
 #### Cas d'une gestion fine des DNS
 
-Vous pouvez configurer les DNS de votre laptop ainsi pour outrepasser les DNS menteurs de votre box ce qui permet de contourner les restrictions des FAIs. A titre perso je préconise dans l'ordre : 
+Vous pouvez configurer les DNS de votre laptop ainsi pour outrepasser les DNS menteurs de votre box ce qui permet de contourner les restrictions des FAIs. A titre perso je préconise dans l'ordre :
  - Un serveur DNS local (si vous vous y connaissez, par exemple [BIND](https://github.com/labbsr0x/docker-dns-bind9), [AdGuard](https://hub.docker.com/r/adguard/adguardhome) ou [PiHole](https://github.com/pi-hole/docker-pi-hole/#running-pi-hole-docker)[^4])
  - Un serveur DNS de confiance ([voir la liste comparative](https://www.privacyguides.org/fr/dns/))
 
 [^4]: les deux solutions sont implémentables sur votre propre instance Self-Hosting
 
-A éviter pour des questions éthiques ou protection de la vie privée : 
+A éviter pour des questions éthiques ou protection de la vie privée :
  - Les serveurs DNS de Google, Cloudflare et autre GAFAM
  - Les serveurs DNS de votre FAI
 
-Personnellement j'ai opté pour une instance Docker adguardhome doublé d'un DNS maitre Quad9
+Personnellement j'ai opté pour une instance Docker adguardhome doublé d'un DNS maître Quad9
 
 Pour hardcoder les DNS sur votre machine vous pouvez compléter les configurations précédentes en ajoutant simplement (cas d'usage des [DNS Quad9](https://www.quad9.net/service/service-addresses-and-features/))
 
@@ -449,7 +449,7 @@ Pour hardcoder les DNS sur votre machine vous pouvez compléter les configuratio
 
 Comme d'habitude : redémarrez le service network et c'est terminé.
 
-### Créer un second compte utilisateur 
+### Créer un second compte utilisateur
 
 Utile si comme vous vous souhaitez distinguer les répertoires de travail de **alice** et le répertoire de travail de l'utilisateur dédié à docker.
 
@@ -495,7 +495,7 @@ Redémarrez le service sshd pour prendre en compte ces modifications.
 Commençons par installer les composants et les clés de sécurités nécessaire pour Docker
 
 ```shell
-sudo apt update 
+sudo apt update
 sudo apt install \
   apt-transport-https \
   ca-certificates \
@@ -513,7 +513,7 @@ echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docke
 Puis alors nous pouvons installer Docker de manière effective
 
 ```shell
-sudo apt update 
+sudo apt update
 sudo apt install \
   docker-ce \
 	docker-ce-cli \
@@ -535,7 +535,7 @@ A ce stade votre utilisateur `dock` peut exécuter une commande docker. On peut 
 
 ```shell
 alice@Self:~$ sudo su dock
-[sudo] Mot de passe de alice : 
+[sudo] Mot de passe de alice :
 dock$Self:/home/alice cd ~
 dock$Self:~ docker -v
 Docker version 26.0.1, build d260a54
@@ -543,7 +543,7 @@ Docker version 26.0.1, build d260a54
 
 A vous maintenant de jouer, j'ai pour ma part utilisé le répertoire du user `dock` comme base pour implémenter tous mes services. Cela fera l'objet d'un autre article.
 
-Votre laptop est en tout cas opérationnel ! 
+Votre laptop est en tout cas opérationnel !
 
 ## Voir également
  - [Docker rootless](https://docs.docker.com/engine/security/rootless/)
