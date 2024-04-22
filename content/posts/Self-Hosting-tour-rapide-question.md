@@ -58,7 +58,7 @@ La première des notions à maîtriser est la notion de sécurité du point de v
 
 Est ce que vos services sont accessibles sur le net ? Si oui, vous avez déjà de nombreux soucis à vous faire. J’opte personnellement pour une installation offline sur mon réseau interne doublé par une solution VPN qui permet aux personnes physiques que j’ai autorisé en amont de tenter de se connecter sur mes services.
 
-Au delà de ces deux notions majeures il est également nécessaire de connaitre les bases de ces domaines pour se lancer : 
+Au delà de ces deux notions majeures il est également nécessaire de connaître les bases de ces domaines pour se lancer : 
  - Unix
  - Docker, Doker-compose ou Podman
  - Réseau, NFS, SSH, ...

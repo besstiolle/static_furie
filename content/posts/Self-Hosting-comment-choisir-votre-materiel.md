@@ -161,9 +161,3 @@ Enfin je vous invite à explorer d’autres pistes comme les modèles hp elitede
  * https://prix-elec.com/tarifs/electricite/prix-kwh
 
 {{< image src="/imgs/dogsAndComputer.avif" alt="Des chiens et un ordinateur" position="center" style="border-radius: 8px;width: 650px;">}}
-
-
-
-
-
-

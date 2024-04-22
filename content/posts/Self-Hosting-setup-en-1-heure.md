@@ -523,7 +523,7 @@ sudo apt install \
 systemctl is-active docker
 ```
 
-La dernière commande doit vous retourner `active` si docker fonctionne correctement.
+La dernière commande doit vous retourner `active` si Docker fonctionne correctement.
 
 On autorise alors le user dock à appeler les commandes docker.
 
