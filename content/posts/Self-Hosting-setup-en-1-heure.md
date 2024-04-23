@@ -392,7 +392,7 @@ iface ens123 inet dhcp
 [...]
 
 # The primary network interface
-allow-hotplug ens123
+auto ens123
 iface ens123 inet static
   address 192.168.1.99/24
   gateway 192.168.1.1
