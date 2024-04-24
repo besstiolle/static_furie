@@ -225,7 +225,7 @@ Et y ajouter la configuration suivante :
 Il faut penser à recharger la configuration (en root)
 
 ```shell
-nsystemctl daemon-reload
+systemctl daemon-reload
 ```
 
 et toujours en root à monter une première fois manuellement le lien (au lieu d'attendre le premier reboot)

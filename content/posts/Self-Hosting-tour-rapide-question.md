@@ -31,6 +31,10 @@ Nous allons dans ces articles essentiellement explorer la seconde tendance et te
 
 Tout a démarré sur un autre domaine : la [dégoogolisation](https://degooglisons-internet.org/fr/), l'art de tenter de sortir des griffes des GAFAM. C'est en abordant la douloureuse question du remplacement de google photo que je me suis rendu à l'évidence : la réappropriation de mes données devra passer par la prise de responsabilité sur son hébergement.
 
+Article connexe : 
+
+ - [Self-Hosting : Installer & Configurer sa première application]({{< ref "/Self-Hosting-installer-sa-premiere-application" >}})
+
 Adieu les services cloud [extrêmement cher](https://www.backblaze.com/cloud-storage/pricing), adieu [les fausses promesses de gratuité](https://www.cnet.com/tech/services-and-software/google-photos-unlimited-free-storage-is-gone-heres-how-to-get-more-space/) qui au passage utilisent mes données à tout va pour me pister. On ne parlera pas non plus de leur manie d’utiliser nos données [pour entraîner leur shitty-IA](https://searx.be/search?q=annonce+utiliser+vos+donn%C3%A9es+pour+entrainer+leur+ia).
 
 Je creuserai dans un autre article à venir ma réflexion sur ce point en abordant des solutions alternatives pour démarrer votre réflexion sur le *Pourquoi se lancer*
@@ -66,5 +70,6 @@ Au delà de ces deux notions majeures il est également nécessaire de connaîtr
 ## Voir également : 
  - Sécuriser son infra Self-Hosting (à venir)
  - [Implémenter en 1h son infra Self-Hosting]({{< ref "/Self-Hosting-setup-en-1-heure" >}})
+ - [Self-Hosting : Installer & Configurer sa première application]({{< ref "/Self-Hosting-installer-sa-premiere-application" >}})
 
 {{< image src="/imgs/dogsAndComputer.avif" alt="Des chiens et un ordinateur" position="center" style="border-radius: 8px;width: 650px;">}}
