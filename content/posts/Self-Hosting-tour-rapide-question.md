@@ -71,5 +71,7 @@ Au delà de ces deux notions majeures il est également nécessaire de connaîtr
  - Sécuriser son infra Self-Hosting (à venir)
  - [Implémenter en 1h son infra Self-Hosting]({{< ref "/Self-Hosting-setup-en-1-heure" >}})
  - [Self-Hosting : Installer & Configurer sa première application]({{< ref "/Self-Hosting-installer-sa-premiere-application" >}})
+ - [Mon top 10 des applications à tester en Self Hosting]({{< ref "/Self-Hosting-10-applications-a-tester" >}})
+ - [Comment configurer Jellyfin pour caster sur Chromecast]({{< ref "/Self-Hosting-configurer-jellyfin-pour-chromecast" >}})
 
 {{< image src="/imgs/dogsAndComputer.avif" alt="Des chiens et un ordinateur" position="center" style="border-radius: 8px;width: 650px;">}}
