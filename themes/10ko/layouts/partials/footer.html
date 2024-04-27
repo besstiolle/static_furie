@@ -2,7 +2,7 @@
     &copy; {{ now.Format "2006" }}
     {{ if .Site.Author.name }} - <a href="{{ .Site.BaseURL }}">{{ .Site.Author.name }}</a> - {{ end }}
     {{ if .Site.Copyright }}{{ .Site.Copyright| safeHTML }}{{ end }}
-    <a href="{{ "posts/index.xml" | absLangURL }}" target="_blank" title="rss">
+    <a href="{{ "posts/index.xml" | absLangURL }}" target="_blank" title="rss" onclick="umami.track('Rss button')">
         <i class='icoRss'></i>
     </a>
 
