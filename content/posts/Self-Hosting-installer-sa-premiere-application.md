@@ -25,9 +25,9 @@ Films, Séries, Musiques et même photos peuvent y être centralisés et mis en 
 
 J'ai choisi cette application car elle est suffisamment complète à mettre en place pour aborder beaucoup de concepts sans pour autant imposer de creuser des concepts trop poussés pour un débutant.
 
-Nous allons évidemment nous appuyer sur un setup Self-Hosting déjà en place et nous allons (arbitrairement) partir que pour cette installation les emplacements des médias seront situés dans : `/mnt/Medias` (imaginez qu'un montage NFS est en place ou un répertoire plein à craquer de films de vacances)
+Nous allons évidemment nous appuyer sur un setup Self-Hosting déjà en place et nous allons (arbitrairement) partir du principe que pour cette installation les emplacements des médias seront situés dans : `/mnt/Medias` (considérez qu'il s'agit là d'un montage NFS vers votre NAS ou d'un répertoire local plein à craquer de films de vacances)
 
-Je considère donc que vous avez votre setup de prêt, Docker déjà fonctionnel et prêt à démarrer. Sinon je vous invite à suivre mon tuto pour [faire son setup Self-Hosting en 1 heure]({{< ref "/Self-Hosting-setup-en-1-heure" >}}) :)
+Je part du principe donc que vous avez votre setup de prêt, Docker déjà fonctionnel et prêt à démarrer. Si ce n'est pas le cas, je vous invite à suivre mon tutoriel pour [monter son setup Self-Hosting en 1 heure]({{< ref "/Self-Hosting-setup-en-1-heure" >}}) :)
 
 ## Préparer son environnement.
 
@@ -62,8 +62,8 @@ mkdir -p /home/dock/compose/jellyfin
 mkdir -p /home/dock/data/jellyfin
 ```
 
-Le répertoire `compose` contiendra évidemment le `docker-compose.yml` et les éventuels autres fichiers de configuration associés (les fichiers `.env`) notamment.
-Le répertoire `data` contiendra évidemment les données générées par nos applications, ce sont des [données chaudes](<< ref "/Self-Hosting-strategies-stockage-sauvegarde-donnees" >>) et sont nécessairement au plus proche de l'OS. On ne doit uniquement y stocker des données dont la perte ne serait pas irrémédiable. On peut y trouver des miniatures d'images, du cache, des données compressées,...
+Le répertoire `compose` contiendra évidemment le `docker-compose.yml` et les éventuels autres fichiers de configuration associés (les fichiers `.env` notamment).
+Le répertoire `data` contiendra évidemment les données générées par nos applications, ce sont des [données chaudes]({{< ref "/Self-Hosting-strategies-stockage-sauvegarde-donnees" >}}) et sont nécessairement au plus proche de l'OS. On ne doit uniquement y stocker des données dont la perte ne serait pas irrémédiable. On peut y trouver des miniatures d'images, du cache, des données compressées,...
 
 Bref du re-générable.
 
@@ -114,7 +114,7 @@ services:
     - 'host.docker.internal:host-gateway'
 ```
 
-**Attention : **Ceci est la version issue de la documentation au moment de l'écriture de mon article, pensez toujours à vous baser sur la source de vérité, ne recopiez pas tel quel mon code :)
+**Attention :** Ceci est la version issue de la documentation au moment de l'écriture de mon article, pensez toujours à vous baser sur la source de vérité, ne recopiez pas tel quel mon code :)
 
 Ma version avec mon contexte appliqué sera le suivant.
 
@@ -122,7 +122,7 @@ Le fichier est à créer dans `/home/dock/compose/jellyfin/docker-compose.yml`
 
 ```yml
 # Notez que depuis début 2024 il n'est plus imposé d'avoir la node version. 
-#Un warning vous propose même de supprimer celle ci
+# Un warning vous propose même de supprimer celle ci
 services:
   jellyfin:
     # J'ai opté pour une autre image au début de mon installation, elle me parait + légère. C'est un choix purement perso
@@ -184,7 +184,7 @@ Au passage si vous allez consulter le contenu du répertoire `/home/dock/data/je
 
 Il est temps maintenant de configurer votre instance Jellyfin. Je ne vais pas faire de documentation sur ce point, ce n'est pas vraiment mon but et la documentation de Jollyfin est très bien pour cela.
 
-Gardez en tête que dans la tête de votre container il existe un répertoire en lecture seule : `/medias` et que vous allez maintenant pouvoir ajouter à Jellyfin les bibliothèques Films, Séries, ... avec des répertoires du type `/medias/movies` ou `/medias/series`
+Gardez en tête que dans le contexte de votre container il existe un répertoire en lecture seule : `/medias` et que vous allez maintenant pouvoir ajouter dans Jellyfin les bibliothèques Films, Séries, ... avec des répertoires du type `/medias/movies` ou `/medias/series`
 
 ## Conclusion
 
