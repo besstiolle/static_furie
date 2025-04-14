@@ -34,3 +34,5 @@ Lancer le serveur http
 Lancer hugo en mode watch
 
 > hugo -w
+
+.
