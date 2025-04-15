@@ -1,0 +1,73 @@
+when:
+  - event: push
+    branch: main
+
+#steps:
+  #- name: build
+  #  image: debian
+  #  commands:
+  #    - echo "This is the build step"
+  #    - echo "binary-data-123" > executable
+  #- name: a-test-step
+  #  image: golang:1.16
+  #  commands:
+  #    - echo "Testing ..."
+  #    - ./executable
+
+  #- name: build Dockerfile
+  #  image: woodpeckerci/plugin-docker-buildx
+  #  settings:
+  #    #repo: woodpeckerci/woodpecker-agent
+  #    #dockerfile: Dockerfile
+  #    #platforms: linux/386,linux/amd64,linux/arm/v6,linux/arm64/v8,linux/ppc64le,linux/riscv64,linux/s390x
+  #    tags: latest
+      
+  #- name: Push image on remote
+pipeline:
+  build:
+    image: docker:26
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    commands:
+      - docker build -t ${DOCKER_IMAGE_NAME} .
+      - docker save ${DOCKER_IMAGE_NAME} -o image.tar.gz
+
+  transfer-and-deploy:
+    image: appleboy/drone-ssh
+    settings:
+      host: ${SSH_HOST}
+      port: ${SSH_PORT}
+      username: ${SSH_USER}
+      key: ${SSH_KEY}
+      script:
+        - mkdir -p /tmp/deploy
+        - exit 0  # Nécessaire pour que le plugin SSH puisse transférer ensuite
+
+    # Transfert du fichier image.tar.gz vers le serveur distant
+    secrets: [ SSH_KEY ]
+    source: image.tar.gz
+    target: /tmp/deploy/image.tar.gz
+
+  load-and-run:
+    image: appleboy/drone-ssh
+    settings:
+      host: ${SSH_HOST}
+      port: ${SSH_PORT}
+      username: ${SSH_USER}
+      key: ${SSH_KEY}
+      script:
+        - docker load -i /tmp/deploy/image.tar.gz
+        - docker stop ${DOCKER_CONTAINER_NAME} || true
+        - docker rm ${DOCKER_CONTAINER_NAME} || true
+        - docker run -d \
+            --name ${DOCKER_CONTAINER_NAME} \
+            -p ${DOCKER_PORT_EXPOSED}:${DOCKER_PORT_INTERNAL} \
+            --label traefik.enable=true \
+            --label traefik.http.routers.${DOCKER_CONTAINER_NAME}.rule=Host\(`${TRAEFIK_HOST}`\) \
+            --label traefik.http.routers.${DOCKER_CONTAINER_NAME}.entrypoints=websecure \
+            --label traefik.http.routers.${DOCKER_CONTAINER_NAME}.tls=true \
+            --label traefik.http.routers.${DOCKER_CONTAINER_NAME}.tls.certresolver=${TRAEFIK_CERT_RESOLVER} \
+            ${DOCKER_IMAGE_NAME}
+
+
+
