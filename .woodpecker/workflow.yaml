@@ -23,8 +23,8 @@ when:
   #    tags: latest
       
   #- name: Push image on remote
-pipeline:
-  build:
+steps:
+  - name: build
     image: docker:26
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
@@ -32,7 +32,7 @@ pipeline:
       - docker build -t ${DOCKER_IMAGE_NAME} .
       - docker save ${DOCKER_IMAGE_NAME} -o image.tar.gz
 
-  transfer-and-deploy:
+  - name: transfer-and-deploy
     image: appleboy/drone-ssh
     settings:
       host: ${SSH_HOST}
@@ -44,11 +44,11 @@ pipeline:
         - exit 0  # Nécessaire pour que le plugin SSH puisse transférer ensuite
 
     # Transfert du fichier image.tar.gz vers le serveur distant
-    secrets: [ SSH_KEY ]
-    source: image.tar.gz
-    target: /tmp/deploy/image.tar.gz
+#    secrets: [ SSH_KEY ]
+#    source: image.tar.gz
+#    target: /tmp/deploy/image.tar.gz
 
-  load-and-run:
+  - name: load-and-run
     image: appleboy/drone-ssh
     settings:
       host: ${SSH_HOST}
