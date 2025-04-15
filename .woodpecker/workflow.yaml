@@ -59,15 +59,15 @@ steps:
         - docker load -i /tmp/deploy/image.tar.gz
         - docker stop ${DOCKER_CONTAINER_NAME} || true
         - docker rm ${DOCKER_CONTAINER_NAME} || true
-        - docker run -d \
-            --name ${DOCKER_CONTAINER_NAME} \
-            -p ${DOCKER_PORT_EXPOSED}:${DOCKER_PORT_INTERNAL} \
-            --label traefik.enable=true \
-            --label traefik.http.routers.${DOCKER_CONTAINER_NAME}.rule=Host\(`${TRAEFIK_HOST}`\) \
-            --label traefik.http.routers.${DOCKER_CONTAINER_NAME}.entrypoints=websecure \
-            --label traefik.http.routers.${DOCKER_CONTAINER_NAME}.tls=true \
-            --label traefik.http.routers.${DOCKER_CONTAINER_NAME}.tls.certresolver=${TRAEFIK_CERT_RESOLVER} \
-            ${DOCKER_IMAGE_NAME}
+#        - docker run -d \
+#            --name ${DOCKER_CONTAINER_NAME} \
+#            -p ${DOCKER_PORT_EXPOSED}:${DOCKER_PORT_INTERNAL} \
+#            --label traefik.enable=true \
+#            --label traefik.http.routers.${DOCKER_CONTAINER_NAME}.rule=Host\(`${TRAEFIK_HOST}`\) \
+#            --label traefik.http.routers.${DOCKER_CONTAINER_NAME}.entrypoints=websecure \
+#            --label traefik.http.routers.${DOCKER_CONTAINER_NAME}.tls=true \
+#            --label traefik.http.routers.${DOCKER_CONTAINER_NAME}.tls.certresolver=${TRAEFIK_CERT_RESOLVER} \
+#            ${DOCKER_IMAGE_NAME}
 
 
 
